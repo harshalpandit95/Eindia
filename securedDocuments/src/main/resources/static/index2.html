@@ -1,0 +1,46 @@
+<html ng-app="uploadApp">
+<head>
+<meta charset="utf8" />
+<title>Document Upload</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body ng-controller="docController">
+	<div class="container">
+		<div class="col-md-6">
+		<div class="row">
+            <h2>Upload Document</h2>
+            <table class="table table-bordered">
+                <tr>
+                    <td><input type="file" class="custom-file-input" file-model="file"></td>
+
+                </tr>
+                <tr>
+                    <td><button ng-click="upload()">Upload</button></td>
+                </tr>
+            </table>
+        </div>
+            <div class="row">
+		        <table class="table table-bordered">
+			<thead>
+    			<tr>
+    				<th>File Name</th>
+    				<th>Action</th>
+    			</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="doc in docList">
+					<td><a href="/doc/"></a></td>
+					<td><a href="/doc/" target="_blank">Download</a></td>
+				</tr>
+			</tbody>		
+		</table>
+		</div>
+	</div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="./js/documentService.js"></script>
+	<script src="./js/app.js"></script>
+</body>
+</html>
