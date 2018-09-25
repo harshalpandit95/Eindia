@@ -1,4 +1,6 @@
 var app = angular.module("eindiaApp", [ "ngRoute" ]);
+
+
 app.config(function($routeProvider) {
 	$routeProvider
 		.when("/", {
@@ -24,11 +26,15 @@ app.config(function($routeProvider) {
 });
 
 app.controller("londonCtrl", function($scope,$rootScope) {
-	$scope.msg = "I love London";
-	
+	$scope.username=$rootScope.username;
+/*	
 	  $scope.getUser= function() {
 	        return $rootScope.username;
-	    };
+	    };*/
+	
+	$scope.logout=function(){
+		$rootScope.isLoggedIn=false;
+	}
 	    
 });
 app.controller("parisCtrl", function($scope) {

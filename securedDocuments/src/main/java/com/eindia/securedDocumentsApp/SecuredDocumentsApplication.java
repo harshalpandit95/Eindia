@@ -1,5 +1,7 @@
 package com.eindia.securedDocumentsApp;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -13,6 +15,7 @@ import com.eindia.repo.InfoRepo;
 @ComponentScan("com.eindia")
 @SpringBootApplication
 public class SecuredDocumentsApplication implements CommandLineRunner {
+	private static final Logger log = LogManager.getLogger(SecuredDocumentsApplication.class);
 	@Autowired
 	private InfoRepo trepo;
 
