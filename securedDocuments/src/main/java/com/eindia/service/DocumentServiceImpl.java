@@ -1,4 +1,4 @@
-package com.eindia.service;
+/*package com.eindia.service;
 
 import java.io.IOException;
 
@@ -28,7 +28,7 @@ public class DocumentServiceImpl {
 		return metadata;
 	}
 
-	/*@Override
+	@Override
 	public byte[] getDocumentFile(Long id) {
 		return documentDao.findOne(id).getFile();
 	}
@@ -37,5 +37,5 @@ public class DocumentServiceImpl {
 	public List findAll() {
 		return (List) documentDao.findAll();
 	}
-*/
-}
+
+}*/

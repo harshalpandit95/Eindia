@@ -1,4 +1,4 @@
-package com.eindia.controller;
+/*package com.eindia.controller;
 
 import java.io.IOException;
 
@@ -17,9 +17,9 @@ import com.eindia.service.DocumentServiceImpl;
 @RequestMapping(value = "/doc")
 public class FileUploadController {
 
-	/*
+	
 	 * private static final Logger LOG = Logger.getLogger(DocumentController.class);
-	 */
+	 
 
 	@Autowired
 	private DocumentServiceImpl dsi;
@@ -29,16 +29,16 @@ public class FileUploadController {
 		return dsi.save(file);
 	}
 	
-/*
+
 	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
 	public HttpEntity getDocument(@PathVariable Long id) {
 		HttpHeaders httpHeaders = new HttpHeaders();
 		httpHeaders.setContentType(MediaType.IMAGE_JPEG);
 		return new ResponseEntity(documentService.getDocumentFile(id), httpHeaders, HttpStatus.OK);
 	}
-*/
-	/*
+
+	
 	 * @RequestMapping(method = RequestMethod.GET) public @ResponseBody List
 	 * getDocument() { return documentService.findAll(); }
-	 */
-}
+	 
+}*/

@@ -5,10 +5,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.core.io.ClassPathResource;
 
-import com.eindia.domain.Test;
-import com.eindia.repo.TestRepo;
+import com.eindia.repo.InfoRepo;
 
 /*@EnableJpaRepositories(basePackages = "com.eindia.repo")
 @EntityScan("com.eindia.domain")*/
@@ -16,7 +14,7 @@ import com.eindia.repo.TestRepo;
 @SpringBootApplication
 public class SecuredDocumentsApplication implements CommandLineRunner {
 	@Autowired
-	private TestRepo trepo;
+	private InfoRepo trepo;
 
 	public static void main(String[] args) {
 		SpringApplication.run(SecuredDocumentsApplication.class, args);
@@ -24,9 +22,7 @@ public class SecuredDocumentsApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		// TODO Auto-generated method stub
-	
-	/*	System.out.println(trepo.count());*/
+		System.out.println(trepo.getUserDetails("EIN16809807", "user1", "user").toString());
 
 	}
 }
