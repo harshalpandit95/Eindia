@@ -31,7 +31,6 @@
 						<li><a href="#section-2" class="scroll">About</a></li>
 						<li><a href="#section-3" class="scroll">How it works</a></li>
 						<li><a href="#section-4" class="scroll">Contact</a></li>
-						<li><a href="#!test" class="scroll">Test</a></li>
 						<li class="login">
 							<div id="loginContainer">
 								<a href="#" id="loginButton"><span>Login</span></a>
@@ -61,164 +60,165 @@
 										</div>
 										<span> <a id="p" onclick='forgot()'>forgot password</a></span>
 										<div id="1">
-											<fieldset id="body1">
+											<fieldset id="body">
 												<fieldset>
 													<label>Enter the details</label>
 												</fieldset>
 												<fieldset>
 													<label for="name">User Name</label> <input type="text"
-														id="u2" name="u2">
+														id="u2" name="u2" ng-model="fUsername">
 												</fieldset>
 												<fieldset>
-													<label for="email">Email id</label> <input type="text"
-														id="email" name="email">
+													<label for="email">Email id</label> <input type="email"
+														id="email" name="email" ng-model="fEmail">
 												</fieldset>
-												<input type="submit" name="a1" id="login1" value="submit">
+												<input type="submit" ng-click="forgotPassword()" name="a1"
+													id="login1" value="submit">
 											</fieldset>
-										</div>
 									</form>
-
 								</div>
+
 							</div>
-						</li>
-						<div class="clear"></div>
-					</ul>
 				</div>
+				</li>
 				<div class="clear"></div>
+				</ul>
 			</div>
+			<div class="clear"></div>
 		</div>
 	</div>
+</div>
 
-	<div class="main" id="container">
-		<div class="content">
-			<div class="content_top section" id="section-1">
-				<div class="wrap">
-					<div class="banner_desc">
-						<div class="wmuSlider example1">
-							<div class="wmuSliderWrapper">
-								<article>
-									<p>Get access to your Documents on the Cloud 24x7</p>
-									<img src="images/clouds.png" alt="" />
-								</article>
-								<article>
-									<p>Now Share your Documents using Encrypted QR Code</p>
-									<img src="images/system.png" alt="" />
-								</article>
-								<article>
-									<p>Worldwide access with any Internet Device</p>
-									<img src="images/slider-img4.png" alt="" />
-								</article>
-								<article>
-									<p>All your Documents Secured with Digital Signature</p>
-									<img src="images/slider-img3.png" alt="" />
-								</article>
-							</div>
+<div class="main" id="container">
+	<div class="content">
+		<div class="content_top section" id="section-1">
+			<div class="wrap">
+				<div class="banner_desc">
+					<div class="wmuSlider example1">
+						<div class="wmuSliderWrapper">
+							<article>
+								<p>Get access to your Documents on the Cloud 24x7</p>
+								<img src="images/clouds.png" alt="" />
+							</article>
+							<article>
+								<p>Now Share your Documents using Encrypted QR Code</p>
+								<img src="images/system.png" alt="" />
+							</article>
+							<article>
+								<p>Worldwide access with any Internet Device</p>
+								<img src="images/slider-img4.png" alt="" />
+							</article>
+							<article>
+								<p>All your Documents Secured with Digital Signature</p>
+								<img src="images/slider-img3.png" alt="" />
+							</article>
 						</div>
-						<script src="js/jquery.wmuSlider.js"></script>
-						<script>
+					</div>
+					<script src="js/jquery.wmuSlider.js"></script>
+					<script>
 							$('.example1').wmuSlider();
 						</script>
 
-					</div>
 				</div>
-				<!--	<div class="comment_icons">
+			</div>
+			<!--	<div class="comment_icons">
                 	<ul>
                 		<li><a class="comments" href="#"> <span>34 Comments</span> </a></li>
                 		<li><a class="email" href="#"> <span>86 Shares</span> </a></li>
                 		<li><a class="like" href="#"> <span>105 Likes</span> </a></li>
                 	</ul>
                 </div>-->
-			</div>
-			<div class="about_desc section" id="section-2">
-				<div class="wrap">
-					<div class="section group example">
-						<div class="col_1_of_2 span_1_of_2">
-							<h3>We use 100% Real Clouds</h3>
-							<p>
-								<span>Lorem ipsum dolor sit amet, consectetur adipisicing
-									elit, sed do eiusmod tempor incididunt ut labore et dolore
-									magna aliqua. Ut enim ad minim veniam, quis nostrud
-									exercitation ullamco laboris nisi ut aliquip ex ea commodo
-									consequat. Duis aute irure dolor in reprehenderit in aliquip ex
-									ea commodo consequat.</span>
-							</p>
-							<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco
-								laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-								dolor in reprehenderit in voluptate velit esse cillum dolore eu
-								fugiat nulla pariatur. Duis aute irure dolor in reprehenderit in
-								voluptate velit esse cillum dolore eu fugiat in voluptate velit
-								esse cillum dolore eu fugiat.Lorem ipsum dolor sit amet,
-								consectetur adipisicing elit, sed do eiusmod tempor incididunt
-								ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								aliquip ex ea commodo consequat. Duis aute irure dolor in
-								reprehenderit in voluptate velit esse cillum dolore eu fugiat
-								nulla pariatur. Duis aute irure dolor in dolore eu fugiat in
-								voluptate velit esse cillum dolore eu fugiat.</p>
-
-						</div>
-						<div class="col_1_of_2 span_1_of_2">
-							<h3>We share using encrypted qr code</h3>
-							<p>
-								<span>Lorem ipsum dolor sit amet, sed do eiusmod tempor
-									ut labore et dolore magna aliqua. Duis aute irure dolor in
-									velit esse cillum dolore eu fugiat nulla pariatur.</span>
-							</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-								sed do eiusmod tempor incididunt ut labore et dolore magna
+		</div>
+		<div class="about_desc section" id="section-2">
+			<div class="wrap">
+				<div class="section group example">
+					<div class="col_1_of_2 span_1_of_2">
+						<h3>We use 100% Real Clouds</h3>
+						<p>
+							<span>Lorem ipsum dolor sit amet, consectetur adipisicing
+								elit, sed do eiusmod tempor incididunt ut labore et dolore magna
 								aliqua. Ut enim ad minim veniam, quis nostrud exercitation
 								ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
 								aute irure dolor in reprehenderit in aliquip ex ea commodo
-								consequat voluptate velit esse cillum dolore eu fugiat nulla
-								pariatur.</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-								sed do eiusmod tempor incididunt ut labore et dolore magna
-								aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-								ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-								aute irure dolor in reprehenderit in aliquip ex ea commodo
-								consequat voluptate velit esse cillum dolore eu fugiat nulla
-								pariatur.</p>
-						</div>
+								consequat.</span>
+						</p>
+						<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco
+							laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+							dolor in reprehenderit in voluptate velit esse cillum dolore eu
+							fugiat nulla pariatur. Duis aute irure dolor in reprehenderit in
+							voluptate velit esse cillum dolore eu fugiat in voluptate velit
+							esse cillum dolore eu fugiat.Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+							labore et dolore magna aliqua. Ut enim ad minim veniam, aliquip
+							ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+							in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+							Duis aute irure dolor in dolore eu fugiat in voluptate velit esse
+							cillum dolore eu fugiat.</p>
+
+					</div>
+					<div class="col_1_of_2 span_1_of_2">
+						<h3>We share using encrypted qr code</h3>
+						<p>
+							<span>Lorem ipsum dolor sit amet, sed do eiusmod tempor ut
+								labore et dolore magna aliqua. Duis aute irure dolor in velit
+								esse cillum dolore eu fugiat nulla pariatur.</span>
+						</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+							sed do eiusmod tempor incididunt ut labore et dolore magna
+							aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+							ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+							aute irure dolor in reprehenderit in aliquip ex ea commodo
+							consequat voluptate velit esse cillum dolore eu fugiat nulla
+							pariatur.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+							sed do eiusmod tempor incididunt ut labore et dolore magna
+							aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+							ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+							aute irure dolor in reprehenderit in aliquip ex ea commodo
+							consequat voluptate velit esse cillum dolore eu fugiat nulla
+							pariatur.</p>
 					</div>
 				</div>
 			</div>
+		</div>
 
-			<div class="features section" id="section-3">
-				<h2>How it Works</h2>
+		<div class="features section" id="section-3">
+			<h2>How it Works</h2>
 
-				<!------ Slider ------------>
-				<div class="browser">
-					<div id="mySliderTabsContainer">
-						<div id="mySliderTabs">
-							<ul>
-								<li><a class="cloud_icon" href="#mother"><i
-										class="cloud_icon"> </i></a></li>
-								<li><a class="cross" href="#parks"> <i class="cross">
-									</i>
-								</a></li>
-								<li><a class="bubble" href="#theOffice"><i
-										class="bubble"> </i></a></li>
-								<li><a class="right_arrow" href="#southPark"> <i
-										class="right_arrow"> </i></a></li>
-							</ul>
-							<div id="mother">
-								<img src="images/browser.png" alt="" />
-							</div>
-							<div id="parks">
-								<img src="images/browser.png" alt="" />
-							</div>
-							<div id="theOffice">
-								<img src="images/browser.png" alt="" />
-							</div>
-							<div id="southPark">
-								<img src="images/browser.png" alt="" />
-							</div>
+			<!------ Slider ------------>
+			<div class="browser">
+				<div id="mySliderTabsContainer">
+					<div id="mySliderTabs">
+						<ul>
+							<li><a class="cloud_icon" href="#mother"><i
+									class="cloud_icon"> </i></a></li>
+							<li><a class="cross" href="#parks"> <i class="cross">
+								</i>
+							</a></li>
+							<li><a class="bubble" href="#theOffice"><i
+									class="bubble"> </i></a></li>
+							<li><a class="right_arrow" href="#southPark"> <i
+									class="right_arrow"> </i></a></li>
+						</ul>
+						<div id="mother">
+							<img src="images/browser.png" alt="" />
 						</div>
-						<div class="clear"></div>
+						<div id="parks">
+							<img src="images/browser.png" alt="" />
+						</div>
+						<div id="theOffice">
+							<img src="images/browser.png" alt="" />
+						</div>
+						<div id="southPark">
+							<img src="images/browser.png" alt="" />
+						</div>
 					</div>
+					<div class="clear"></div>
 				</div>
+			</div>
 
 
-				<script>
+			<script>
 					$(document).ready(function() {
 						var tabs = $("div#mySliderTabs").sliderTabs({
 							autoplay : 5000,
@@ -240,24 +240,24 @@
 						$(this).parent().addClass("active");
 					});
 				</script>
-				<!------End Slider ------------>
-			</div>
+			<!------End Slider ------------>
 		</div>
 	</div>
-	<div class="footer section" id="section-4">
-		<div class="wrap">
-			<div class="section group example">
-				<div class="col_1_of_2 span_1_of_2">
-					<div class="footer_logo">
-						<img src="images/logo.png" alt="" />
-					</div>
-					<p>Lorem ipsum dolor sit amet, sed do eiusmod tempor ut labore
-						et dolore magna aliqua. Duis aute irure dolor in velit esse cillum
-						dolore eu fugiat nulla pariatur.</p>
-					<div class="search_box"></div>
+</div>
+<div class="footer section" id="section-4">
+	<div class="wrap">
+		<div class="section group example">
+			<div class="col_1_of_2 span_1_of_2">
+				<div class="footer_logo">
+					<img src="images/logo.png" alt="" />
 				</div>
-				<div class="col_1_of_2 span_1_of_2">
-					<!--<div class="social_icons">
+				<p>Lorem ipsum dolor sit amet, sed do eiusmod tempor ut labore
+					et dolore magna aliqua. Duis aute irure dolor in velit esse cillum
+					dolore eu fugiat nulla pariatur.</p>
+				<div class="search_box"></div>
+			</div>
+			<div class="col_1_of_2 span_1_of_2">
+				<!--<div class="social_icons">
 				       	      	<ul>
 				       	    	 <li><a class="rss" href="#"></a> </li>
 				       	    	  <li><a class="dribble" href="#"></a> </li>
@@ -266,15 +266,15 @@
 				       	    	    <div class="clear"></div>
 				       	    	 </ul>
 				       	        </div>-->
-				</div>
 			</div>
 		</div>
 	</div>
-	<div class="copy-right">
-		<div class="wrap">
-			<p class="copy">
-				� 2016 <a href="" target="_blank">e-india</a>
-			</p>
-		</div>
+</div>
+<div class="copy-right">
+	<div class="wrap">
+		<p class="copy">
+			� 2016 <a href="" target="_blank">e-india</a>
+		</p>
 	</div>
+</div>
 </div>
