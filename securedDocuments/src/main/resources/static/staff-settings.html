@@ -1,0 +1,150 @@
+<head>
+<style>
+p {
+	font-size: 16px;
+}
+</style>
+<!-- <link
+	href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700'
+	rel='stylesheet' type='text/css'> -->
+<!-- <link href="css/font-awesome.min.css" rel="stylesheet"> -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/templatemo-style.css" rel="stylesheet">
+</head>
+<div ng-controller="userSettingCtrl">
+	<!-- Left column -->
+	<div class="templatemo-flex-row">
+		<div class="templatemo-sidebar">
+			<header class="templatemo-site-header">
+				<div class="square"></div>
+				<h1>E-INDIA</h1>
+			</header>
+			<div class="profile-photo-container">
+
+				<img src="http://localhost:9066/api/get/image/{{username}}/pic"
+					alt="Profile Photo" class="img-responsive" />
+				<div class="profile-photo-overlay"></div>
+			</div>
+			<div class="mobile-menu-icon">
+				<i class="fa fa-bars"></i>
+			</div>
+			<nav class="templatemo-left-nav">
+				<ul>
+					<li><a href="/#!/staffdashboard"><i
+							class="fa fa-home fa-fw"></i>Profile</a></li>
+					<li><a href="/#!/createuser"><i class="fa fa-users fa-fw"></i>Create
+							User</a></li>
+					<li><a href="/#!/uploaduserdocs"><i
+							class="fa fa-sliders fa-fw"></i>Upload Documents</a></li>
+					<li><a href="/#!/staffdashboard"><i class="fa fa-sliders fa-fw"></i>Settings</a></li>
+					<li><a href="#" ng-click="logout()"><i
+							class="fa fa-eject fa-fw"></i>Sign Out</a></li>
+				</ul>
+			</nav>
+		</div>
+		<!-- Main content -->
+		<div class="templatemo-content col-1 light-gray-bg">
+
+			<div class="templatemo-content-container">
+				<div class="templatemo-content-widget white-bg">
+					<h2 class="margin-bottom-10">Change Password</h2>
+					<p>Password must minimum of length 8.</p>
+
+					<form class="templatemo-login-form">
+
+						<div class="row form-group">
+							<div class="col-lg-6 col-md-6 form-group">
+								<label for="inputCurrentPassword">Current Password</label> <input
+									type="password" class="form-control" id="op1" name="op1"
+									placeholder="*********************" ng-model="currentPassword">
+							</div>
+						</div>
+
+
+
+
+						<div class="row form-group">
+							<div class="col-lg-6 col-md-6 form-group">
+								<label for="inputNewPassword">New Password</label> <input
+									type="password" class="form-control"
+									placeholder="*********************" ng-model="newPassword">
+								<label ng-if="newPassword.length>8">Field cannot be
+									empty</label>
+							</div>
+							<div class="col-lg-6 col-md-6 form-group">
+								<label for="inputConfirmNewPassword">Confirm New
+									Password</label> <input type="password" class="form-control"
+									placeholder="*********************" ng-model="newPassword1">
+							</div>
+							<label ng-if="newPassword === newPassword1">Passwords
+								match</label>
+
+						</div>
+
+						<div class="form-group text-left">
+							<button type="submit" class="templatemo-blue-button"
+								ng-click="changePassword()">Change Password</button>
+							<button type="reset" class="templatemo-white-button">Reset</button>
+						</div>
+
+						<br>
+					</form>
+					<form class="templatemo-login-form" enctype="multipart/form-data">
+						<div class="row form-group">
+							<div class="col-lg-12">
+								<h2 class="margin-bottom-10">Change Profile Picture</h2>
+								<p>Image size upto 1MB</p>
+								<label class="control-label templatemo-block">File Input</label>
+								<!-- <input type="file" name="fileToUpload" id="fileToUpload" class="margin-bottom-10"> -->
+								<input type="file" file-model="uploadedFile" name="photo"
+									id="photo" class="filestyle" data-buttonName="btn-primary"
+									data-buttonBefore="true" data-icon="false">
+
+							</div>
+						</div>
+
+
+
+						<hr />
+						<div class="col-sm-offset-2">
+							<p>{{uploadResult}}</p>
+						</div>
+
+						<div class="form-group text-left">
+							<button type="submit" ng-click="doUploadFile()"
+								class="templatemo-blue-button">Update Profile</button>
+							<button type="reset" class="templatemo-white-button">Reset</button>
+						</div>
+					</form>
+
+					<!-- <form class="form-horizontal">
+						<div class="form-group">
+							<label class="control-label col-sm-2" for="uploadfile">Upload
+								File:</label>
+							<div class="col-sm-5">
+								<input class="form-control" type="file"
+									file-model="uploadedFile" placeholder="Upload File"></input>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-10">
+								<button type="submit" class="btn btn-default"
+									ng-click="doUploadFile()">Upload</button>
+							</div>
+						</div>
+					</form> -->
+				</div>
+				<footer class="text-right">
+					<p>
+						Copyright &copy; E-INDIAS | Designed by <a href=""
+							target="_parent">E-india</a>
+					</p>
+				</footer>
+			</div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="./js/templatemo-script.js"></script>
+	<script type="text/javascript" src="./js/bootstrap-filestyle.min.js"></script>
+</div>

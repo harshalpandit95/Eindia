@@ -1,0 +1,43 @@
+ <div class="templatemo-content col-1 light-gray-bg">
+        
+        <div class="templatemo-content-container">
+            <div class="templatemo-content-widget white-bg">
+                   <h2 class="margin-bottom-10">LIST OF DOCUMENTS</h2>
+            <div class="panel panel-default table-responsive">
+     
+         
+              <table class="table table-striped table-bordered templatemo-user-table">
+                  <form action="newServlet" method="get">
+              <table class="table table-striped table-bordered templatemo-user-table">
+                <thead>
+                  <tr>
+                    <td>#</td>
+                    <td>Document Name</td>
+                    <td>E-Signed</td>
+                    <td>View</td>
+                    <td>Select</td>
+                  </tr>
+                </thead>
+                <tbody>   
+                  <tr>
+                    <td>1/td>
+                    <td>2</td>
+                    <td>Yes</td>
+                    <td><a class="templatemo-edit-btn" id=""  onclick="resoudre(this);">View</a></td>
+                    <td>    
+                        <input type="checkbox" name="documents" id="<%=incre%>" value="<%=element1%>"/> 
+                        <label for="<%=incre%>"><span></span></label>  </td>
+                    
+                  </tr>
+        
+                </tbody>
+              </table>  
+               
+           
+
+                   </div>
+               
+                 <div class="col-lg-6 col-md-4 form-group">    <input type="text" class="form-control" maxlength="20" id="fn" name="tp" placeholder="Enter the Username to be shared" required> 
+                 </div> <input type="submit"  class="templatemo-blue-button" value=" Create Qrcode ">    </form>
+         
+            </div>  

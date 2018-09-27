@@ -1,296 +1,497 @@
-2018-09-25 07:39:19.460  INFO newvoe5-rds01 --- [           main] c.e.s.SecuredDocumentsApplication        : Starting SecuredDocumentsApplication on newvoe5-rds01 with PID 17024 (D:\Harshal\ionic\eIndia\Eindia\securedDocuments\target\classes started by HP00492848 in D:\Harshal\ionic\eIndia\Eindia\securedDocuments)
-2018-09-25 07:39:19.465 DEBUG newvoe5-rds01 --- [           main] c.e.s.SecuredDocumentsApplication        : Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
-2018-09-25 07:39:19.466  INFO newvoe5-rds01 --- [           main] c.e.s.SecuredDocumentsApplication        : No active profile set, falling back to default profiles: default
-2018-09-25 07:39:19.507  INFO newvoe5-rds01 --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6a2f6f80: startup date [Tue Sep 25 07:39:19 UTC 2018]; root of context hierarchy
-2018-09-25 07:39:20.646  INFO newvoe5-rds01 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ab67533a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-09-25 07:39:21.133  INFO newvoe5-rds01 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
-2018-09-25 07:39:21.152  INFO newvoe5-rds01 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
-2018-09-25 07:39:21.164  INFO newvoe5-rds01 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
-2018-09-25 07:39:21.165  INFO newvoe5-rds01 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.34
-2018-09-25 07:39:21.175  INFO newvoe5-rds01 --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_161/bin/server;C:/Program Files/Java/jre1.8.0_161/bin;C:/Program Files/Java/jre1.8.0_161/lib/amd64;C:\Program Files\Python36\Scripts\;C:\Program Files\Python36\;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\OraHome_1\product\11.2.0\client_1\BIN;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\TortoiseSVN\bin;C:\Program Files\SlikSvn\bin;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\nodejs\;C:\Program Files\Cloud Foundry;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Python36\Scripts\;C:\Program Files\Python36\;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\OraHome_1\product\11.2.0\client_1\BIN;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\TortoiseSVN\bin;C:\Program Files\SlikSvn\bin;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Python36\Scripts\;C:\Program Files\Python36\;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\OraHome_1\product\11.2.0\client_1\BIN;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\TortoiseSVN\bin;C:\Program Files\SlikSvn\bin;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\nodejs\;C:\Users\HP00492848\AppData\Local\atom\b;D:\Harshal\softwares\eclipse;;.]
-2018-09-25 07:39:21.371  INFO newvoe5-rds01 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
-2018-09-25 07:39:21.372  INFO newvoe5-rds01 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1867 ms
-2018-09-25 07:39:21.436  INFO newvoe5-rds01 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
-2018-09-25 07:39:21.439  INFO newvoe5-rds01 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-09-25 07:39:21.440  INFO newvoe5-rds01 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-09-25 07:39:21.440  INFO newvoe5-rds01 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2018-09-25 07:39:21.440  INFO newvoe5-rds01 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
-2018-09-25 07:39:21.612  INFO newvoe5-rds01 --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'eindia'
-2018-09-25 07:39:21.629  INFO newvoe5-rds01 --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+2019-01-26 19:55:49.070 ERROR DESKTOP-FPK7N5K --- [nio-9066-exec-8] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException
+	at com.eindia.service.StorageService.getResources(StorageService.java:94)
+	at com.eindia.controller.RestUploadController.getImage(RestUploadController.java:99)
+	at sun.reflect.GeneratedMethodAccessor60.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2019-01-26 20:06:10.705  INFO DESKTOP-FPK7N5K --- [io-9066-exec-10] c.e.c.RestUploadController               : request received is ->{"firstName":"dsffs","middleName":"fsfs"}
+2019-01-26 20:06:10.709 ERROR DESKTOP-FPK7N5K --- [io-9066-exec-10] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException
+	at com.eindia.controller.DatabaseController.registerUser(DatabaseController.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2019-01-26 20:06:14.526  INFO DESKTOP-FPK7N5K --- [nio-9066-exec-9] c.e.c.RestUploadController               : request received is ->{"firstName":"dsffs","middleName":"fsfs","lastName":"dsfsdf"}
+2019-01-26 20:06:14.529 ERROR DESKTOP-FPK7N5K --- [nio-9066-exec-9] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException
+	at com.eindia.controller.DatabaseController.registerUser(DatabaseController.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2019-01-26 20:06:21.715  INFO DESKTOP-FPK7N5K --- [nio-9066-exec-3] c.e.c.RestUploadController               : request received is ->{"firstName":"dsffs","middleName":"fsfs","lastName":"dsfsdf","dob":"03-01-2019","gender":"Male"}
+2019-01-26 20:06:21.716 ERROR DESKTOP-FPK7N5K --- [nio-9066-exec-3] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException
+	at com.eindia.controller.DatabaseController.registerUser(DatabaseController.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2019-01-26 20:06:40.585  INFO DESKTOP-FPK7N5K --- [nio-9066-exec-1] c.e.c.RestUploadController               : request received is ->{"firstName":"dsffs","middleName":"fsfs","lastName":"dsfsdf","dob":"03-01-2019","gender":"Male","caste":"sfsd","state":"fsdfs","district":"sfsdf","city":"fsd","emailId":"harshalpandit95@gmail.com","address":"fsdfs"}
+2019-01-26 20:06:40.588 ERROR DESKTOP-FPK7N5K --- [nio-9066-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException
+	at com.eindia.controller.DatabaseController.registerUser(DatabaseController.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2019-01-26 20:06:46.654  INFO DESKTOP-FPK7N5K --- [nio-9066-exec-4] c.e.c.RestUploadController               : request received is ->{"firstName":"dsffs","middleName":"fsfs","lastName":"dsfsdf","dob":"03-01-2019","gender":"Male","caste":"sfsd","state":"fsdfs","district":"sfsdf","city":"fsd","pinCode":555578,"emailId":"harshalpandit95@gmail.com","address":"fsdfs"}
+2019-01-26 20:06:48.207  INFO DESKTOP-FPK7N5K --- [nio-9066-exec-4] c.e.c.RestUploadController               : data saved into Database successfully...
+2019-01-26 20:07:34.752  INFO DESKTOP-FPK7N5K --- [nio-9066-exec-6] c.e.c.RestUploadController               : request received is ->{"firstName":"Harshal","middleName":"fjshfjs","lastName":"Pandit","dob":"09-01-2019","gender":"Male","caste":"fdsfs","state":"Maharashtra","district":"fsdfsdfs","city":"Vasai","pinCode":401208,"emailId":"harshalpandit95@gmail.com","phoneNo":9999999999,"address":"Nalanda 8/A Wing 24 No Flat\nMittal Enclave Naigaon East"}
+2019-01-26 20:07:35.880  INFO DESKTOP-FPK7N5K --- [nio-9066-exec-6] c.e.c.RestUploadController               : data saved into Database successfully...
+2019-01-26 20:09:49.867  INFO DESKTOP-FPK7N5K --- [nio-9066-exec-4] c.e.c.RestUploadController               : request received is ->{"firstName":"Harshal","middleName":"fjshfjs","lastName":"Pandit","dob":"18-01-2019","gender":"Female","caste":"fsdfsd","state":"Maharashtra","district":"fsdfsfds","city":"Vasai","pinCode":401208,"emailId":"harshalpandit95@gmail.com","address":"Nalanda 8/A Wing 24 No Flat\nMittal Enclave Naigaon East"}
+2019-01-26 20:09:51.179  INFO DESKTOP-FPK7N5K --- [nio-9066-exec-4] c.e.c.RestUploadController               : data saved into Database successfully...
+2019-01-26 20:17:29.967  INFO DESKTOP-FPK7N5K --- [nio-9066-exec-8] c.e.c.RestUploadController               : request received is ->{"firstName":"Harshal","middleName":"fjshfjs","lastName":"Pandit","gender":"Male","caste":"hfghf","state":"Maharashtra","district":"hfhf","city":"Vasai","pinCode":401208,"emailId":"harshalpandit95@gmail.com","phoneNo":9999999999,"address":"Nalanda 8/A Wing 24 No Flat\nMittal Enclave Naigaon East"}
+2019-01-26 20:17:30.980  INFO DESKTOP-FPK7N5K --- [nio-9066-exec-8] c.e.c.RestUploadController               : data saved into Database successfully...
+2019-01-26 20:25:19.147  INFO DESKTOP-FPK7N5K --- [nio-9066-exec-6] c.e.c.RestUploadController               : request received is ->{"firstName":"Harshal","middleName":"fjshfjs","lastName":"Pandit","dob":"03-01-2019","gender":"Female","caste":"fdsjkgn","state":"Maharashtra","district":"fss","city":"Vasai","pinCode":401208,"emailId":"harshalpandit95@gmail.com","phoneNo":8888888888,"address":"Nalanda 8/A Wing 24 No Flat\nMittal Enclave Naigaon East"}
+2019-01-26 20:25:20.040  INFO DESKTOP-FPK7N5K --- [nio-9066-exec-6] c.e.c.RestUploadController               : data saved into Database successfully...
+2019-01-26 20:25:56.019  INFO DESKTOP-FPK7N5K --- [           main] c.e.s.SecuredDocumentsApplication        : Starting SecuredDocumentsApplication on DESKTOP-FPK7N5K with PID 8424 (C:\Users\harshal\Documents\GitHub\Eindia\securedDocuments\target\classes started by harshal in C:\Users\harshal\Documents\GitHub\Eindia\securedDocuments)
+2019-01-26 20:25:56.047 DEBUG DESKTOP-FPK7N5K --- [           main] c.e.s.SecuredDocumentsApplication        : Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2019-01-26 20:25:56.050  INFO DESKTOP-FPK7N5K --- [           main] c.e.s.SecuredDocumentsApplication        : No active profile set, falling back to default profiles: default
+2019-01-26 20:25:56.253  INFO DESKTOP-FPK7N5K --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1e66f1f5: startup date [Sat Jan 26 20:25:56 IST 2019]; root of context hierarchy
+2019-01-26 20:25:59.529  INFO DESKTOP-FPK7N5K --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e949fd3a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-26 20:26:00.610  INFO DESKTOP-FPK7N5K --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9066 (http)
+2019-01-26 20:26:00.639  INFO DESKTOP-FPK7N5K --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9066"]
+2019-01-26 20:26:00.662  INFO DESKTOP-FPK7N5K --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-01-26 20:26:00.663  INFO DESKTOP-FPK7N5K --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-01-26 20:26:00.678  INFO DESKTOP-FPK7N5K --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_161\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_161/bin/server;C:/Program Files/Java/jre1.8.0_161/bin;C:/Program Files/Java/jre1.8.0_161/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Users\harshal\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\harshal\AppData\Local\Programs\Python\Python37-32\;C:\Users\harshal\AppData\Local\Microsoft\WindowsApps;C:\Users\harshal\AppData\Roaming\npm;C:\Users\harshal\AppData\Local\GitHubDesktop\bin;F:\pycharmIDE\JetBrains\PyCharm 2018.3.1\bin;F:\scalaIde\eclipse;;.]
+2019-01-26 20:26:01.679  INFO DESKTOP-FPK7N5K --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-01-26 20:26:01.680  INFO DESKTOP-FPK7N5K --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 5438 ms
+2019-01-26 20:26:02.000  INFO DESKTOP-FPK7N5K --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2019-01-26 20:26:02.014  INFO DESKTOP-FPK7N5K --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-26 20:26:02.017  INFO DESKTOP-FPK7N5K --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-26 20:26:02.017  INFO DESKTOP-FPK7N5K --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-26 20:26:02.017  INFO DESKTOP-FPK7N5K --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-26 20:26:02.960  INFO DESKTOP-FPK7N5K --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'eindia'
+2019-01-26 20:26:03.035  INFO DESKTOP-FPK7N5K --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
 	name: eindia
 	...]
-2018-09-25 07:39:21.703  INFO newvoe5-rds01 --- [           main] o.h.Version                              : HHH000412: Hibernate Core {5.2.17.Final}
-2018-09-25 07:39:21.705  INFO newvoe5-rds01 --- [           main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
-2018-09-25 07:39:21.744  INFO newvoe5-rds01 --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2018-09-25 07:39:21.872  INFO newvoe5-rds01 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
-2018-09-25 07:39:27.512  INFO newvoe5-rds01 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
-2018-09-25 07:39:27.528  INFO newvoe5-rds01 --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2018-09-25 07:39:28.040  INFO newvoe5-rds01 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'eindia'
-2018-09-25 07:39:28.379  INFO newvoe5-rds01 --- [           main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
-2018-09-25 07:39:28.600  INFO newvoe5-rds01 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-09-25 07:39:28.846  INFO newvoe5-rds01 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6a2f6f80: startup date [Tue Sep 25 07:39:19 UTC 2018]; root of context hierarchy
-2018-09-25 07:39:28.888  WARN newvoe5-rds01 --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2018-09-25 07:39:28.919  INFO newvoe5-rds01 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dbService/getUserDetails],methods=[POST],produces=[application/json]}" onto public java.lang.String com.eindia.controller.DatabaseController.getUserInfo(java.lang.String) throws java.io.IOException
-2018-09-25 07:39:28.922  INFO newvoe5-rds01 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2018-09-25 07:39:28.923  INFO newvoe5-rds01 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-09-25 07:39:28.948  INFO newvoe5-rds01 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-09-25 07:39:28.948  INFO newvoe5-rds01 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-09-25 07:39:28.988  INFO newvoe5-rds01 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2018-09-25 07:39:29.181  INFO newvoe5-rds01 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
-2018-09-25 07:39:29.182  INFO newvoe5-rds01 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'eindiaDataSource' has been autodetected for JMX exposure
-2018-09-25 07:39:29.186  INFO newvoe5-rds01 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'eindiaDataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=eindiaDataSource,type=HikariDataSource]
-2018-09-25 07:39:29.196  INFO newvoe5-rds01 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
-2018-09-25 07:39:29.205  INFO newvoe5-rds01 --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
-2018-09-25 07:39:29.219  INFO newvoe5-rds01 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
-2018-09-25 07:39:29.222  INFO newvoe5-rds01 --- [           main] c.e.s.SecuredDocumentsApplication        : Started SecuredDocumentsApplication in 10.023 seconds (JVM running for 10.803)
-2018-09-25 14:22:17.243  INFO newvoe5-rds01 --- [           main] c.e.s.SecuredDocumentsApplication        : Starting SecuredDocumentsApplication on newvoe5-rds01 with PID 23816 (D:\Harshal\ionic\eIndia\Eindia\securedDocuments\target\classes started by HP00492848 in D:\Harshal\ionic\eIndia\Eindia\securedDocuments)
-2018-09-25 14:22:17.249 DEBUG newvoe5-rds01 --- [           main] c.e.s.SecuredDocumentsApplication        : Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
-2018-09-25 14:22:17.249  INFO newvoe5-rds01 --- [           main] c.e.s.SecuredDocumentsApplication        : No active profile set, falling back to default profiles: default
-2018-09-25 14:22:17.290  INFO newvoe5-rds01 --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@65d09a04: startup date [Tue Sep 25 14:22:17 UTC 2018]; root of context hierarchy
-2018-09-25 14:22:18.256  INFO newvoe5-rds01 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$28582178] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-09-25 14:22:18.759  INFO newvoe5-rds01 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9066 (http)
-2018-09-25 14:22:18.778  INFO newvoe5-rds01 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9066"]
-2018-09-25 14:22:18.790  INFO newvoe5-rds01 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
-2018-09-25 14:22:18.790  INFO newvoe5-rds01 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.34
-2018-09-25 14:22:18.800  INFO newvoe5-rds01 --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_161/bin/server;C:/Program Files/Java/jre1.8.0_161/bin;C:/Program Files/Java/jre1.8.0_161/lib/amd64;C:\Program Files\Python36\Scripts\;C:\Program Files\Python36\;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\OraHome_1\product\11.2.0\client_1\BIN;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\TortoiseSVN\bin;C:\Program Files\SlikSvn\bin;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\nodejs\;C:\Program Files\Cloud Foundry;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Python36\Scripts\;C:\Program Files\Python36\;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\OraHome_1\product\11.2.0\client_1\BIN;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\TortoiseSVN\bin;C:\Program Files\SlikSvn\bin;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Python36\Scripts\;C:\Program Files\Python36\;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\OraHome_1\product\11.2.0\client_1\BIN;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\TortoiseSVN\bin;C:\Program Files\SlikSvn\bin;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\nodejs\;C:\Users\HP00492848\AppData\Local\atom\b;D:\Harshal\softwares\eclipse;;.]
-2018-09-25 14:22:18.998  INFO newvoe5-rds01 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
-2018-09-25 14:22:18.998  INFO newvoe5-rds01 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1711 ms
-2018-09-25 14:22:19.063  INFO newvoe5-rds01 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
-2018-09-25 14:22:19.066  INFO newvoe5-rds01 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-09-25 14:22:19.066  INFO newvoe5-rds01 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-09-25 14:22:19.066  INFO newvoe5-rds01 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2018-09-25 14:22:19.066  INFO newvoe5-rds01 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
-2018-09-25 14:22:19.229  INFO newvoe5-rds01 --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'eindia'
-2018-09-25 14:22:19.246  INFO newvoe5-rds01 --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
+2019-01-26 20:26:03.367  INFO DESKTOP-FPK7N5K --- [           main] o.h.Version                              : HHH000412: Hibernate Core {5.2.17.Final}
+2019-01-26 20:26:03.370  INFO DESKTOP-FPK7N5K --- [           main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2019-01-26 20:26:03.470  INFO DESKTOP-FPK7N5K --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-01-26 20:26:03.855  INFO DESKTOP-FPK7N5K --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2019-01-26 20:26:06.647  INFO DESKTOP-FPK7N5K --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2019-01-26 20:26:06.695  INFO DESKTOP-FPK7N5K --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-01-26 20:26:09.239  INFO DESKTOP-FPK7N5K --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'eindia'
+2019-01-26 20:26:11.498  INFO DESKTOP-FPK7N5K --- [           main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-01-26 20:26:12.192  WARN DESKTOP-FPK7N5K --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securedDocumentsApplication': Unsatisfied dependency expressed through field 'trepo'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'infoRepo': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract void com.eindia.repo.InfoRepo.insertInfo(java.lang.Long,java.lang.String,java.lang.Integer)!
+2019-01-26 20:26:12.193  INFO DESKTOP-FPK7N5K --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'eindia'
+2019-01-26 20:26:12.195  INFO DESKTOP-FPK7N5K --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2019-01-26 20:26:14.179  INFO DESKTOP-FPK7N5K --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2019-01-26 20:26:14.186  INFO DESKTOP-FPK7N5K --- [           main] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2019-01-26 20:26:14.380  INFO DESKTOP-FPK7N5K --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-01-26 20:26:14.388 ERROR DESKTOP-FPK7N5K --- [           main] o.s.b.SpringApplication                  : Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securedDocumentsApplication': Unsatisfied dependency expressed through field 'trepo'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'infoRepo': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract void com.eindia.repo.InfoRepo.insertInfo(java.lang.Long,java.lang.String,java.lang.Integer)!
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:586)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:780)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1277)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1265)
+	at com.eindia.securedDocumentsApp.SecuredDocumentsApplication.main(SecuredDocumentsApplication.java:42)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'infoRepo': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract void com.eindia.repo.InfoRepo.insertInfo(java.lang.Long,java.lang.String,java.lang.Integer)!
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1699)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:573)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:583)
+	... 19 more
+Caused by: java.lang.IllegalArgumentException: Validation failed for query for method public abstract void com.eindia.repo.InfoRepo.insertInfo(java.lang.Long,java.lang.String,java.lang.Integer)!
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.validateQuery(SimpleJpaQuery.java:93)
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.<init>(SimpleJpaQuery.java:63)
+	at org.springframework.data.jpa.repository.query.JpaQueryFactory.fromMethodWithQueryString(JpaQueryFactory.java:76)
+	at org.springframework.data.jpa.repository.query.JpaQueryFactory.fromQueryAnnotation(JpaQueryFactory.java:56)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$DeclaredQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:139)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:206)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:79)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lookupQuery(RepositoryFactorySupport.java:565)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(RepositoryFactorySupport.java:558)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Iterator.forEachRemaining(Unknown Source)
+	at java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Unknown Source)
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.collect(Unknown Source)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.mapMethodsToQuery(RepositoryFactorySupport.java:560)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$new$0(RepositoryFactorySupport.java:550)
+	at java.util.Optional.map(Unknown Source)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.<init>(RepositoryFactorySupport.java:550)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:323)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$4(RepositoryFactoryBeanSupport.java:290)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:141)
+	at org.springframework.data.util.Lazy.get(Lazy.java:63)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:293)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:102)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1758)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1695)
+	... 29 more
+Caused by: java.lang.IllegalArgumentException: org.hibernate.hql.internal.ast.QuerySyntaxException: Person is not mapped [insert into Person (id,name,age) select :id,:name,:age from Dual]
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:133)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:157)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:164)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:670)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:350)
+	at com.sun.proxy.$Proxy93.createQuery(Unknown Source)
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.validateQuery(SimpleJpaQuery.java:87)
+	... 58 more
+Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: Person is not mapped [insert into Person (id,name,age) select :id,:name,:age from Dual]
+	at org.hibernate.hql.internal.ast.QuerySyntaxException.generateQueryException(QuerySyntaxException.java:79)
+	at org.hibernate.QueryException.wrapWithQueryString(QueryException.java:103)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:217)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:141)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:115)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:77)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:153)
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:553)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:662)
+	... 66 more
+Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: Person is not mapped
+	at org.hibernate.hql.internal.ast.util.SessionFactoryHelper.requireClassPersister(SessionFactoryHelper.java:169)
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.createIntoClause(HqlSqlWalker.java:1322)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.intoClause(HqlSqlBaseWalker.java:879)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.insertStatement(HqlSqlBaseWalker.java:511)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:285)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:266)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:189)
+	... 72 more
+2019-01-26 20:27:03.467  INFO DESKTOP-FPK7N5K --- [           main] c.e.s.SecuredDocumentsApplication        : Starting SecuredDocumentsApplication on DESKTOP-FPK7N5K with PID 9060 (C:\Users\harshal\Documents\GitHub\Eindia\securedDocuments\target\classes started by harshal in C:\Users\harshal\Documents\GitHub\Eindia\securedDocuments)
+2019-01-26 20:27:03.485 DEBUG DESKTOP-FPK7N5K --- [           main] c.e.s.SecuredDocumentsApplication        : Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2019-01-26 20:27:03.488  INFO DESKTOP-FPK7N5K --- [           main] c.e.s.SecuredDocumentsApplication        : No active profile set, falling back to default profiles: default
+2019-01-26 20:27:03.663  INFO DESKTOP-FPK7N5K --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@561b6512: startup date [Sat Jan 26 20:27:03 IST 2019]; root of context hierarchy
+2019-01-26 20:27:07.531  INFO DESKTOP-FPK7N5K --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b4b6c668] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-26 20:27:08.688  INFO DESKTOP-FPK7N5K --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9066 (http)
+2019-01-26 20:27:08.753  INFO DESKTOP-FPK7N5K --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9066"]
+2019-01-26 20:27:08.839  INFO DESKTOP-FPK7N5K --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-01-26 20:27:08.841  INFO DESKTOP-FPK7N5K --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-01-26 20:27:08.888  INFO DESKTOP-FPK7N5K --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_161\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_161/bin/server;C:/Program Files/Java/jre1.8.0_161/bin;C:/Program Files/Java/jre1.8.0_161/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Users\harshal\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\harshal\AppData\Local\Programs\Python\Python37-32\;C:\Users\harshal\AppData\Local\Microsoft\WindowsApps;C:\Users\harshal\AppData\Roaming\npm;C:\Users\harshal\AppData\Local\GitHubDesktop\bin;F:\pycharmIDE\JetBrains\PyCharm 2018.3.1\bin;F:\scalaIde\eclipse;;.]
+2019-01-26 20:27:09.762  INFO DESKTOP-FPK7N5K --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-01-26 20:27:09.762  INFO DESKTOP-FPK7N5K --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 6106 ms
+2019-01-26 20:27:10.252  INFO DESKTOP-FPK7N5K --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
+2019-01-26 20:27:10.267  INFO DESKTOP-FPK7N5K --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-26 20:27:10.269  INFO DESKTOP-FPK7N5K --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-26 20:27:10.269  INFO DESKTOP-FPK7N5K --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-26 20:27:10.269  INFO DESKTOP-FPK7N5K --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-26 20:27:11.752  INFO DESKTOP-FPK7N5K --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'eindia'
+2019-01-26 20:27:11.935  INFO DESKTOP-FPK7N5K --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
 	name: eindia
 	...]
-2018-09-25 14:22:19.319  INFO newvoe5-rds01 --- [           main] o.h.Version                              : HHH000412: Hibernate Core {5.2.17.Final}
-2018-09-25 14:22:19.321  INFO newvoe5-rds01 --- [           main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
-2018-09-25 14:22:19.359  INFO newvoe5-rds01 --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2018-09-25 14:22:19.487  INFO newvoe5-rds01 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
-2018-09-25 14:22:20.041  INFO newvoe5-rds01 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
-2018-09-25 14:22:20.057  INFO newvoe5-rds01 --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2018-09-25 14:22:20.548  INFO newvoe5-rds01 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'eindia'
-2018-09-25 14:22:20.914  INFO newvoe5-rds01 --- [           main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
-2018-09-25 14:22:21.128  INFO newvoe5-rds01 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-09-25 14:22:21.342  INFO newvoe5-rds01 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@65d09a04: startup date [Tue Sep 25 14:22:17 UTC 2018]; root of context hierarchy
-2018-09-25 14:22:21.387  WARN newvoe5-rds01 --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2018-09-25 14:22:21.419  INFO newvoe5-rds01 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dbService/getUserDetails],methods=[POST],produces=[application/json]}" onto public java.lang.String com.eindia.controller.DatabaseController.getUserInfo(java.lang.String) throws java.io.IOException
-2018-09-25 14:22:21.422  INFO newvoe5-rds01 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2018-09-25 14:22:21.423  INFO newvoe5-rds01 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-09-25 14:22:21.450  INFO newvoe5-rds01 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-09-25 14:22:21.451  INFO newvoe5-rds01 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-09-25 14:22:21.493  INFO newvoe5-rds01 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2018-09-25 14:22:21.694  INFO newvoe5-rds01 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
-2018-09-25 14:22:21.694  INFO newvoe5-rds01 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'eindiaDataSource' has been autodetected for JMX exposure
-2018-09-25 14:22:21.699  INFO newvoe5-rds01 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'eindiaDataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=eindiaDataSource,type=HikariDataSource]
-2018-09-25 14:22:21.709  INFO newvoe5-rds01 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9066"]
-2018-09-25 14:22:21.719  INFO newvoe5-rds01 --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
-2018-09-25 14:22:21.733  INFO newvoe5-rds01 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9066 (http) with context path ''
-2018-09-25 14:22:21.735  INFO newvoe5-rds01 --- [           main] c.e.s.SecuredDocumentsApplication        : Started SecuredDocumentsApplication in 4.739 seconds (JVM running for 5.481)
-2018-09-25 14:22:31.673  INFO newvoe5-rds01 --- [nio-9066-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
-2018-09-25 14:22:31.673  INFO newvoe5-rds01 --- [nio-9066-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
-2018-09-25 14:22:31.700  INFO newvoe5-rds01 --- [nio-9066-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
-2018-09-25 14:24:37.728  INFO newvoe5-rds01 --- [           main] c.e.s.SecuredDocumentsApplication        : Starting SecuredDocumentsApplication on newvoe5-rds01 with PID 17912 (D:\Harshal\ionic\eIndia\Eindia\securedDocuments\target\classes started by HP00492848 in D:\Harshal\ionic\eIndia\Eindia\securedDocuments)
-2018-09-25 14:24:37.733 DEBUG newvoe5-rds01 --- [           main] c.e.s.SecuredDocumentsApplication        : Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
-2018-09-25 14:24:37.734  INFO newvoe5-rds01 --- [           main] c.e.s.SecuredDocumentsApplication        : No active profile set, falling back to default profiles: default
-2018-09-25 14:24:37.774  INFO newvoe5-rds01 --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1e66f1f5: startup date [Tue Sep 25 14:24:37 UTC 2018]; root of context hierarchy
-2018-09-25 14:24:38.823  INFO newvoe5-rds01 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8e0a3b90] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-09-25 14:24:39.314  INFO newvoe5-rds01 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
-2018-09-25 14:24:39.333  INFO newvoe5-rds01 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
-2018-09-25 14:24:39.344  INFO newvoe5-rds01 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
-2018-09-25 14:24:39.345  INFO newvoe5-rds01 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.34
-2018-09-25 14:24:39.355  INFO newvoe5-rds01 --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_161/bin/server;C:/Program Files/Java/jre1.8.0_161/bin;C:/Program Files/Java/jre1.8.0_161/lib/amd64;C:\Program Files\Python36\Scripts\;C:\Program Files\Python36\;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\OraHome_1\product\11.2.0\client_1\BIN;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\TortoiseSVN\bin;C:\Program Files\SlikSvn\bin;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\nodejs\;C:\Program Files\Cloud Foundry;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Python36\Scripts\;C:\Program Files\Python36\;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\OraHome_1\product\11.2.0\client_1\BIN;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\TortoiseSVN\bin;C:\Program Files\SlikSvn\bin;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Python36\Scripts\;C:\Program Files\Python36\;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\OraHome_1\product\11.2.0\client_1\BIN;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\TortoiseSVN\bin;C:\Program Files\SlikSvn\bin;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\nodejs\;C:\Users\HP00492848\AppData\Local\atom\b;D:\Harshal\softwares\eclipse;;.]
-2018-09-25 14:24:39.540  INFO newvoe5-rds01 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
-2018-09-25 14:24:39.540  INFO newvoe5-rds01 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1768 ms
-2018-09-25 14:24:39.606  INFO newvoe5-rds01 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
-2018-09-25 14:24:39.609  INFO newvoe5-rds01 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-09-25 14:24:39.610  INFO newvoe5-rds01 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-09-25 14:24:39.610  INFO newvoe5-rds01 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2018-09-25 14:24:39.610  INFO newvoe5-rds01 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
-2018-09-25 14:24:39.784  INFO newvoe5-rds01 --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'eindia'
-2018-09-25 14:24:39.801  INFO newvoe5-rds01 --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
-	name: eindia
-	...]
-2018-09-25 14:24:39.876  INFO newvoe5-rds01 --- [           main] o.h.Version                              : HHH000412: Hibernate Core {5.2.17.Final}
-2018-09-25 14:24:39.877  INFO newvoe5-rds01 --- [           main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
-2018-09-25 14:24:39.915  INFO newvoe5-rds01 --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2018-09-25 14:24:40.044  INFO newvoe5-rds01 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
-2018-09-25 14:24:40.578  INFO newvoe5-rds01 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
-2018-09-25 14:24:40.593  INFO newvoe5-rds01 --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2018-09-25 14:24:41.162  INFO newvoe5-rds01 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'eindia'
-2018-09-25 14:24:41.511  INFO newvoe5-rds01 --- [           main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
-2018-09-25 14:24:41.741  INFO newvoe5-rds01 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-09-25 14:24:41.998  INFO newvoe5-rds01 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1e66f1f5: startup date [Tue Sep 25 14:24:37 UTC 2018]; root of context hierarchy
-2018-09-25 14:24:42.048  WARN newvoe5-rds01 --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2018-09-25 14:24:42.082  INFO newvoe5-rds01 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dbService/getUserDetails],methods=[POST],produces=[application/json]}" onto public java.lang.String com.eindia.controller.DatabaseController.getUserInfo(java.lang.String) throws java.io.IOException
-2018-09-25 14:24:42.086  INFO newvoe5-rds01 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2018-09-25 14:24:42.086  INFO newvoe5-rds01 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-09-25 14:24:42.113  INFO newvoe5-rds01 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-09-25 14:24:42.114  INFO newvoe5-rds01 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-09-25 14:24:42.178  INFO newvoe5-rds01 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2018-09-25 14:24:42.368  INFO newvoe5-rds01 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
-2018-09-25 14:24:42.369  INFO newvoe5-rds01 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'eindiaDataSource' has been autodetected for JMX exposure
-2018-09-25 14:24:42.373  INFO newvoe5-rds01 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'eindiaDataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=eindiaDataSource,type=HikariDataSource]
-2018-09-25 14:24:42.383  INFO newvoe5-rds01 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
-2018-09-25 14:24:42.393  INFO newvoe5-rds01 --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
-2018-09-25 14:24:42.407  INFO newvoe5-rds01 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
-2018-09-25 14:24:42.409  INFO newvoe5-rds01 --- [           main] c.e.s.SecuredDocumentsApplication        : Started SecuredDocumentsApplication in 4.937 seconds (JVM running for 5.686)
-2018-09-25 14:24:51.002  INFO newvoe5-rds01 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
-2018-09-25 14:24:51.002  INFO newvoe5-rds01 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
-2018-09-25 14:24:51.024  INFO newvoe5-rds01 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
-2018-09-25 14:48:35.415  WARN newvoe5-rds01 --- [nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
-2018-09-26 10:10:45.545  INFO newvoe5-rds01 --- [           main] c.e.s.SecuredDocumentsApplication        : Starting SecuredDocumentsApplication on newvoe5-rds01 with PID 3368 (D:\Harshal\ionic\eIndia\securedDocuments\target\classes started by HP00492848 in D:\Harshal\ionic\eIndia\securedDocuments)
-2018-09-26 10:10:45.551 DEBUG newvoe5-rds01 --- [           main] c.e.s.SecuredDocumentsApplication        : Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
-2018-09-26 10:10:45.552  INFO newvoe5-rds01 --- [           main] c.e.s.SecuredDocumentsApplication        : No active profile set, falling back to default profiles: default
-2018-09-26 10:10:45.592  INFO newvoe5-rds01 --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@394df057: startup date [Wed Sep 26 10:10:45 UTC 2018]; root of context hierarchy
-2018-09-26 10:10:46.752  INFO newvoe5-rds01 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a5e2f75e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-09-26 10:10:47.268  INFO newvoe5-rds01 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
-2018-09-26 10:10:47.287  INFO newvoe5-rds01 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
-2018-09-26 10:10:47.299  INFO newvoe5-rds01 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
-2018-09-26 10:10:47.299  INFO newvoe5-rds01 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.34
-2018-09-26 10:10:47.309  INFO newvoe5-rds01 --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_161/bin/server;C:/Program Files/Java/jre1.8.0_161/bin;C:/Program Files/Java/jre1.8.0_161/lib/amd64;C:\Program Files\Python36\Scripts\;C:\Program Files\Python36\;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\OraHome_1\product\11.2.0\client_1\BIN;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\TortoiseSVN\bin;C:\Program Files\SlikSvn\bin;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\nodejs\;C:\Program Files\Cloud Foundry;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Python36\Scripts\;C:\Program Files\Python36\;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\OraHome_1\product\11.2.0\client_1\BIN;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\TortoiseSVN\bin;C:\Program Files\SlikSvn\bin;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Python36\Scripts\;C:\Program Files\Python36\;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\OraHome_1\product\11.2.0\client_1\BIN;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\TortoiseSVN\bin;C:\Program Files\SlikSvn\bin;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\nodejs\;C:\Users\HP00492848\AppData\Local\atom\b;D:\Harshal\softwares\eclipse;;.]
-2018-09-26 10:10:47.500  INFO newvoe5-rds01 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
-2018-09-26 10:10:47.500  INFO newvoe5-rds01 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1911 ms
-2018-09-26 10:10:47.563  INFO newvoe5-rds01 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
-2018-09-26 10:10:47.566  INFO newvoe5-rds01 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-09-26 10:10:47.567  INFO newvoe5-rds01 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-09-26 10:10:47.567  INFO newvoe5-rds01 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2018-09-26 10:10:47.567  INFO newvoe5-rds01 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
-2018-09-26 10:10:47.793  INFO newvoe5-rds01 --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'eindia'
-2018-09-26 10:10:47.846  INFO newvoe5-rds01 --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
-	name: eindia
-	...]
-2018-09-26 10:10:48.019  INFO newvoe5-rds01 --- [           main] o.h.Version                              : HHH000412: Hibernate Core {5.2.17.Final}
-2018-09-26 10:10:48.023  INFO newvoe5-rds01 --- [           main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
-2018-09-26 10:10:48.096  INFO newvoe5-rds01 --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2018-09-26 10:10:48.310  INFO newvoe5-rds01 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
-2018-09-26 10:10:48.938  INFO newvoe5-rds01 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
-2018-09-26 10:10:48.965  INFO newvoe5-rds01 --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2018-09-26 10:10:49.668  INFO newvoe5-rds01 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'eindia'
-2018-09-26 10:10:50.066  INFO newvoe5-rds01 --- [           main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
-2018-09-26 10:10:50.333  INFO newvoe5-rds01 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-09-26 10:10:50.630  INFO newvoe5-rds01 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@394df057: startup date [Wed Sep 26 10:10:45 UTC 2018]; root of context hierarchy
-2018-09-26 10:10:50.675  WARN newvoe5-rds01 --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2018-09-26 10:10:50.710  INFO newvoe5-rds01 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dbService/getUserDetails],methods=[POST],produces=[application/json]}" onto public java.lang.String com.eindia.controller.DatabaseController.getUserInfo(java.lang.String) throws java.io.IOException
-2018-09-26 10:10:50.712  INFO newvoe5-rds01 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2018-09-26 10:10:50.713  INFO newvoe5-rds01 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-09-26 10:10:50.738  INFO newvoe5-rds01 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-09-26 10:10:50.739  INFO newvoe5-rds01 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-09-26 10:10:50.781  INFO newvoe5-rds01 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2018-09-26 10:10:51.071  INFO newvoe5-rds01 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
-2018-09-26 10:10:51.072  INFO newvoe5-rds01 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'eindiaDataSource' has been autodetected for JMX exposure
-2018-09-26 10:10:51.077  INFO newvoe5-rds01 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'eindiaDataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=eindiaDataSource,type=HikariDataSource]
-2018-09-26 10:10:51.087  INFO newvoe5-rds01 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
-2018-09-26 10:10:51.097  INFO newvoe5-rds01 --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
-2018-09-26 10:10:51.112  INFO newvoe5-rds01 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
-2018-09-26 10:10:51.114  INFO newvoe5-rds01 --- [           main] c.e.s.SecuredDocumentsApplication        : Started SecuredDocumentsApplication in 5.826 seconds (JVM running for 6.6)
-2018-09-26 10:11:07.286  INFO newvoe5-rds01 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
-2018-09-26 10:11:07.286  INFO newvoe5-rds01 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
-2018-09-26 10:11:07.310  INFO newvoe5-rds01 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
-2018-09-26 13:23:28.798  INFO newvoe5-rds01 --- [           main] c.e.s.SecuredDocumentsApplication        : Starting SecuredDocumentsApplication on newvoe5-rds01 with PID 28412 (D:\Harshal\ionic\eIndia\securedDocuments\target\classes started by HP00492848 in D:\Harshal\ionic\eIndia\securedDocuments)
-2018-09-26 13:23:28.804 DEBUG newvoe5-rds01 --- [           main] c.e.s.SecuredDocumentsApplication        : Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
-2018-09-26 13:23:28.804  INFO newvoe5-rds01 --- [           main] c.e.s.SecuredDocumentsApplication        : No active profile set, falling back to default profiles: default
-2018-09-26 13:23:28.847  INFO newvoe5-rds01 --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@707194ba: startup date [Wed Sep 26 13:23:28 UTC 2018]; root of context hierarchy
-2018-09-26 13:23:29.942  INFO newvoe5-rds01 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$95100001] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-09-26 13:23:30.459  INFO newvoe5-rds01 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
-2018-09-26 13:23:30.478  INFO newvoe5-rds01 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
-2018-09-26 13:23:30.489  INFO newvoe5-rds01 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
-2018-09-26 13:23:30.489  INFO newvoe5-rds01 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.34
-2018-09-26 13:23:30.499  INFO newvoe5-rds01 --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_161/bin/server;C:/Program Files/Java/jre1.8.0_161/bin;C:/Program Files/Java/jre1.8.0_161/lib/amd64;C:\Program Files\Python36\Scripts\;C:\Program Files\Python36\;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\OraHome_1\product\11.2.0\client_1\BIN;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\TortoiseSVN\bin;C:\Program Files\SlikSvn\bin;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\nodejs\;C:\Program Files\Cloud Foundry;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Python36\Scripts\;C:\Program Files\Python36\;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\OraHome_1\product\11.2.0\client_1\BIN;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\TortoiseSVN\bin;C:\Program Files\SlikSvn\bin;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Python36\Scripts\;C:\Program Files\Python36\;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\OraHome_1\product\11.2.0\client_1\BIN;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\TortoiseSVN\bin;C:\Program Files\SlikSvn\bin;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\nodejs\;C:\Users\HP00492848\AppData\Local\atom\b;D:\Harshal\softwares\eclipse;;.]
-2018-09-26 13:23:30.686  INFO newvoe5-rds01 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
-2018-09-26 13:23:30.686  INFO newvoe5-rds01 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1842 ms
-2018-09-26 13:23:30.752  INFO newvoe5-rds01 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
-2018-09-26 13:23:30.756  INFO newvoe5-rds01 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-09-26 13:23:30.756  INFO newvoe5-rds01 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-09-26 13:23:30.756  INFO newvoe5-rds01 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2018-09-26 13:23:30.756  INFO newvoe5-rds01 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
-2018-09-26 13:23:30.946  INFO newvoe5-rds01 --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'eindia'
-2018-09-26 13:23:30.965  INFO newvoe5-rds01 --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
-	name: eindia
-	...]
-2018-09-26 13:23:31.041  INFO newvoe5-rds01 --- [           main] o.h.Version                              : HHH000412: Hibernate Core {5.2.17.Final}
-2018-09-26 13:23:31.043  INFO newvoe5-rds01 --- [           main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
-2018-09-26 13:23:31.082  INFO newvoe5-rds01 --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2018-09-26 13:23:31.215  INFO newvoe5-rds01 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
-2018-09-26 13:23:39.765  INFO newvoe5-rds01 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
-2018-09-26 13:23:39.781  INFO newvoe5-rds01 --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2018-09-26 13:23:40.277  INFO newvoe5-rds01 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'eindia'
-2018-09-26 13:23:40.595  INFO newvoe5-rds01 --- [           main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
-2018-09-26 13:23:40.822  INFO newvoe5-rds01 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-09-26 13:23:41.048  INFO newvoe5-rds01 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@707194ba: startup date [Wed Sep 26 13:23:28 UTC 2018]; root of context hierarchy
-2018-09-26 13:23:41.094  WARN newvoe5-rds01 --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2018-09-26 13:23:41.127  INFO newvoe5-rds01 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dbService/getUserDetails],methods=[POST],produces=[application/json]}" onto public java.lang.String com.eindia.controller.DatabaseController.getUserInfo(java.lang.String) throws java.io.IOException
-2018-09-26 13:23:41.130  INFO newvoe5-rds01 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2018-09-26 13:23:41.130  INFO newvoe5-rds01 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-09-26 13:23:41.176  INFO newvoe5-rds01 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-09-26 13:23:41.176  INFO newvoe5-rds01 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-09-26 13:23:41.216  INFO newvoe5-rds01 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2018-09-26 13:23:41.412  INFO newvoe5-rds01 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
-2018-09-26 13:23:41.413  INFO newvoe5-rds01 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'eindiaDataSource' has been autodetected for JMX exposure
-2018-09-26 13:23:41.417  INFO newvoe5-rds01 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'eindiaDataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=eindiaDataSource,type=HikariDataSource]
-2018-09-26 13:23:41.428  INFO newvoe5-rds01 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
-2018-09-26 13:23:41.437  INFO newvoe5-rds01 --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
-2018-09-26 13:23:41.453  INFO newvoe5-rds01 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
-2018-09-26 13:23:41.455  INFO newvoe5-rds01 --- [           main] c.e.s.SecuredDocumentsApplication        : Started SecuredDocumentsApplication in 12.911 seconds (JVM running for 13.664)
-2018-09-26 13:23:51.920  INFO newvoe5-rds01 --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
-2018-09-26 13:23:51.920  INFO newvoe5-rds01 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
-2018-09-26 13:23:51.942  INFO newvoe5-rds01 --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
-2018-09-26 13:38:12.131  WARN newvoe5-rds01 --- [nio-8080-exec-5] c.z.h.p.PoolBase                         : HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@19729e9 (No operations allowed after connection closed.)
-2018-09-26 13:38:12.134  WARN newvoe5-rds01 --- [nio-8080-exec-5] c.z.h.p.PoolBase                         : HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@48a99c34 (No operations allowed after connection closed.)
-2018-09-26 13:38:12.135  WARN newvoe5-rds01 --- [nio-8080-exec-5] c.z.h.p.PoolBase                         : HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@70c93ca9 (No operations allowed after connection closed.)
-2018-09-26 13:38:12.137  WARN newvoe5-rds01 --- [nio-8080-exec-5] c.z.h.p.PoolBase                         : HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@3d69b6ab (No operations allowed after connection closed.)
-2018-09-26 13:38:12.139  WARN newvoe5-rds01 --- [nio-8080-exec-5] c.z.h.p.PoolBase                         : HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@289d334 (No operations allowed after connection closed.)
-2018-09-26 13:38:12.140  WARN newvoe5-rds01 --- [nio-8080-exec-5] c.z.h.p.PoolBase                         : HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@645a76d (No operations allowed after connection closed.)
-2018-09-26 13:38:12.142  WARN newvoe5-rds01 --- [nio-8080-exec-5] c.z.h.p.PoolBase                         : HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@3f50ef78 (No operations allowed after connection closed.)
-2018-09-26 13:38:12.143  WARN newvoe5-rds01 --- [nio-8080-exec-5] c.z.h.p.PoolBase                         : HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@4ffccad7 (No operations allowed after connection closed.)
-2018-09-26 13:38:12.144  WARN newvoe5-rds01 --- [nio-8080-exec-5] c.z.h.p.PoolBase                         : HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@3a0b06f (No operations allowed after connection closed.)
-2018-09-26 13:38:12.146  WARN newvoe5-rds01 --- [nio-8080-exec-5] c.z.h.p.PoolBase                         : HikariPool-1 - Failed to validate connection com.mysql.jdbc.JDBC4Connection@287511b9 (No operations allowed after connection closed.)
-2018-09-27 12:41:48.699  INFO newvoe5-rds01 --- [           main] c.e.s.SecuredDocumentsApplication        : Starting SecuredDocumentsApplication on newvoe5-rds01 with PID 22512 (D:\Harshal\ionic\eIndia\securedDocuments\target\classes started by HP00492848 in D:\Harshal\ionic\eIndia\securedDocuments)
-2018-09-27 12:41:48.704 DEBUG newvoe5-rds01 --- [           main] c.e.s.SecuredDocumentsApplication        : Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
-2018-09-27 12:41:48.705  INFO newvoe5-rds01 --- [           main] c.e.s.SecuredDocumentsApplication        : No active profile set, falling back to default profiles: default
-2018-09-27 12:41:48.756  INFO newvoe5-rds01 --- [           main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@707194ba: startup date [Thu Sep 27 12:41:48 UTC 2018]; root of context hierarchy
-2018-09-27 12:41:50.132  INFO newvoe5-rds01 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9ddbc06c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-09-27 12:41:50.767  INFO newvoe5-rds01 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 9066 (http)
-2018-09-27 12:41:50.791  INFO newvoe5-rds01 --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-9066"]
-2018-09-27 12:41:50.806  INFO newvoe5-rds01 --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
-2018-09-27 12:41:50.806  INFO newvoe5-rds01 --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet Engine: Apache Tomcat/8.5.34
-2018-09-27 12:41:50.821  INFO newvoe5-rds01 --- [ost-startStop-1] o.a.c.c.AprLifecycleListener             : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_161/bin/server;C:/Program Files/Java/jre1.8.0_161/bin;C:/Program Files/Java/jre1.8.0_161/lib/amd64;C:\Program Files\Python36\Scripts\;C:\Program Files\Python36\;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\OraHome_1\product\11.2.0\client_1\BIN;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\TortoiseSVN\bin;C:\Program Files\SlikSvn\bin;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\nodejs\;C:\Program Files\Cloud Foundry;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Python36\Scripts\;C:\Program Files\Python36\;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\OraHome_1\product\11.2.0\client_1\BIN;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\TortoiseSVN\bin;C:\Program Files\SlikSvn\bin;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_161\bin;C:\Program Files\Python36\Scripts\;C:\Program Files\Python36\;C:\ProgramData\Oracle\Java\javapath;C:\Oracle\OraHome_1\product\11.2.0\client_1\BIN;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\TortoiseSVN\bin;C:\Program Files\SlikSvn\bin;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\nodejs\;C:\Users\HP00492848\AppData\Local\atom\b;D:\Harshal\softwares\eclipse;;.]
-2018-09-27 12:41:51.081  INFO newvoe5-rds01 --- [ost-startStop-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
-2018-09-27 12:41:51.082  INFO newvoe5-rds01 --- [ost-startStop-1] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 2329 ms
-2018-09-27 12:41:51.148  INFO newvoe5-rds01 --- [ost-startStop-1] o.s.b.w.s.ServletRegistrationBean        : Servlet dispatcherServlet mapped to [/]
-2018-09-27 12:41:51.154  INFO newvoe5-rds01 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-09-27 12:41:51.154  INFO newvoe5-rds01 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-09-27 12:41:51.154  INFO newvoe5-rds01 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2018-09-27 12:41:51.154  INFO newvoe5-rds01 --- [ost-startStop-1] o.s.b.w.s.FilterRegistrationBean         : Mapping filter: 'requestContextFilter' to: [/*]
-2018-09-27 12:41:51.352  INFO newvoe5-rds01 --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'eindia'
-2018-09-27 12:41:51.381  INFO newvoe5-rds01 --- [           main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [
-	name: eindia
-	...]
-2018-09-27 12:41:51.530  INFO newvoe5-rds01 --- [           main] o.h.Version                              : HHH000412: Hibernate Core {5.2.17.Final}
-2018-09-27 12:41:51.532  INFO newvoe5-rds01 --- [           main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
-2018-09-27 12:41:51.597  INFO newvoe5-rds01 --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2018-09-27 12:41:51.778  INFO newvoe5-rds01 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
-2018-09-27 12:41:52.492  INFO newvoe5-rds01 --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
-2018-09-27 12:41:52.516  INFO newvoe5-rds01 --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2018-09-27 12:41:53.220  INFO newvoe5-rds01 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'eindia'
-2018-09-27 12:41:53.613  INFO newvoe5-rds01 --- [           main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
-2018-09-27 12:41:53.898  INFO newvoe5-rds01 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-09-27 12:41:54.153  INFO newvoe5-rds01 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@707194ba: startup date [Thu Sep 27 12:41:48 UTC 2018]; root of context hierarchy
-2018-09-27 12:41:54.216  WARN newvoe5-rds01 --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2018-09-27 12:41:54.256  INFO newvoe5-rds01 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dbService/getUserDetails],methods=[POST],produces=[application/json]}" onto public java.lang.String com.eindia.controller.DatabaseController.getUserInfo(java.lang.String) throws java.io.IOException
-2018-09-27 12:41:54.259  INFO newvoe5-rds01 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2018-09-27 12:41:54.260  INFO newvoe5-rds01 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2018-09-27 12:41:54.289  INFO newvoe5-rds01 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-09-27 12:41:54.289  INFO newvoe5-rds01 --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2018-09-27 12:41:54.337  INFO newvoe5-rds01 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2018-09-27 12:41:54.594  INFO newvoe5-rds01 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
-2018-09-27 12:41:54.595  INFO newvoe5-rds01 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'eindiaDataSource' has been autodetected for JMX exposure
-2018-09-27 12:41:54.599  INFO newvoe5-rds01 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'eindiaDataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=eindiaDataSource,type=HikariDataSource]
-2018-09-27 12:41:54.611  INFO newvoe5-rds01 --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9066"]
-2018-09-27 12:41:54.621  INFO newvoe5-rds01 --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
-2018-09-27 12:41:54.637  INFO newvoe5-rds01 --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9066 (http) with context path ''
-2018-09-27 12:41:54.639  INFO newvoe5-rds01 --- [           main] c.e.s.SecuredDocumentsApplication        : Started SecuredDocumentsApplication in 6.317 seconds (JVM running for 7.152)
-2018-09-27 12:42:00.973  INFO newvoe5-rds01 --- [nio-9066-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
-2018-09-27 12:42:00.973  INFO newvoe5-rds01 --- [nio-9066-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
-2018-09-27 12:42:01.000  INFO newvoe5-rds01 --- [nio-9066-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+2019-01-26 20:27:12.445  INFO DESKTOP-FPK7N5K --- [           main] o.h.Version                              : HHH000412: Hibernate Core {5.2.17.Final}
+2019-01-26 20:27:12.456  INFO DESKTOP-FPK7N5K --- [           main] o.h.c.Environment                        : HHH000206: hibernate.properties not found
+2019-01-26 20:27:12.623  INFO DESKTOP-FPK7N5K --- [           main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-01-26 20:27:13.125  INFO DESKTOP-FPK7N5K --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2019-01-26 20:27:23.318  INFO DESKTOP-FPK7N5K --- [           main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2019-01-26 20:27:23.375  INFO DESKTOP-FPK7N5K --- [           main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-01-26 20:27:26.319  INFO DESKTOP-FPK7N5K --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'eindia'
+2019-01-26 20:27:28.167  INFO DESKTOP-FPK7N5K --- [           main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-01-26 20:27:29.279  INFO DESKTOP-FPK7N5K --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-26 20:27:30.184  INFO DESKTOP-FPK7N5K --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@561b6512: startup date [Sat Jan 26 20:27:03 IST 2019]; root of context hierarchy
+2019-01-26 20:27:30.288  WARN DESKTOP-FPK7N5K --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-01-26 20:27:30.359  INFO DESKTOP-FPK7N5K --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dbService/getUserDetails],methods=[POST],produces=[application/json]}" onto public java.lang.String com.eindia.controller.DatabaseController.getUserInfo(java.lang.String) throws java.io.IOException
+2019-01-26 20:27:30.360  INFO DESKTOP-FPK7N5K --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dbService/registerUser],methods=[POST],produces=[application/json]}" onto public java.lang.String com.eindia.controller.DatabaseController.registerUser(java.lang.String) throws java.io.IOException
+2019-01-26 20:27:30.361  INFO DESKTOP-FPK7N5K --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dbService/recoverPassword],methods=[POST],produces=[application/json]}" onto public java.lang.String com.eindia.controller.DatabaseController.recoverPassword(java.lang.String) throws java.io.IOException
+2019-01-26 20:27:30.361  INFO DESKTOP-FPK7N5K --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dbService/resetPassword],methods=[POST],produces=[application/json]}" onto public java.lang.String com.eindia.controller.DatabaseController.resetPassword(java.lang.String) throws java.io.IOException
+2019-01-26 20:27:30.379  INFO DESKTOP-FPK7N5K --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/files/{filename:.+}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<org.springframework.core.io.Resource> com.eindia.controller.RestUploadController.getFile(java.lang.String)
+2019-01-26 20:27:30.379  INFO DESKTOP-FPK7N5K --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/get/profilePic],methods=[POST]}" onto public org.springframework.http.ResponseEntity<org.springframework.core.io.InputStreamResource> com.eindia.controller.RestUploadController.getProfilePicture(java.lang.String) throws java.io.IOException
+2019-01-26 20:27:30.380  INFO DESKTOP-FPK7N5K --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/getallfiles],methods=[GET]}" onto public java.util.List<java.lang.String> com.eindia.controller.RestUploadController.getListFiles()
+2019-01-26 20:27:30.380  INFO DESKTOP-FPK7N5K --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/uploadQr],methods=[POST]}" onto public java.lang.String com.eindia.controller.RestUploadController.uploadQr(org.springframework.web.multipart.MultipartFile,java.lang.String) throws java.lang.Exception
+2019-01-26 20:27:30.380  INFO DESKTOP-FPK7N5K --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/uploadfile],methods=[POST]}" onto public java.lang.String com.eindia.controller.RestUploadController.uploadFileMulti(org.springframework.web.multipart.MultipartFile,java.lang.String,java.lang.String) throws java.lang.Exception
+2019-01-26 20:27:30.381  INFO DESKTOP-FPK7N5K --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/get/image/{userId}/{document}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<org.springframework.core.io.InputStreamResource> com.eindia.controller.RestUploadController.getImage(java.lang.String,java.lang.String) throws java.io.IOException
+2019-01-26 20:27:30.381  INFO DESKTOP-FPK7N5K --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/get/qrcode/{userId}/{documentList}/{thirdPary}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<org.springframework.core.io.InputStreamResource> com.eindia.controller.RestUploadController.getQrCode(java.lang.String,java.lang.String,java.lang.String) throws java.io.IOException
+2019-01-26 20:27:30.387  INFO DESKTOP-FPK7N5K --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-26 20:27:30.388  INFO DESKTOP-FPK7N5K --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-26 20:27:30.436  INFO DESKTOP-FPK7N5K --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-26 20:27:30.436  INFO DESKTOP-FPK7N5K --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-26 20:27:30.531  INFO DESKTOP-FPK7N5K --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2019-01-26 20:27:31.147  INFO DESKTOP-FPK7N5K --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-01-26 20:27:31.148  INFO DESKTOP-FPK7N5K --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'eindiaDataSource' has been autodetected for JMX exposure
+2019-01-26 20:27:31.159  INFO DESKTOP-FPK7N5K --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'eindiaDataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=eindiaDataSource,type=HikariDataSource]
+2019-01-26 20:27:31.180  INFO DESKTOP-FPK7N5K --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-9066"]
+2019-01-26 20:27:31.199  INFO DESKTOP-FPK7N5K --- [           main] o.a.t.u.n.NioSelectorPool                : Using a shared selector for servlet write/read
+2019-01-26 20:27:31.223  INFO DESKTOP-FPK7N5K --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 9066 (http) with context path ''
+2019-01-26 20:27:31.228  INFO DESKTOP-FPK7N5K --- [           main] c.e.s.SecuredDocumentsApplication        : Started SecuredDocumentsApplication in 29.081 seconds (JVM running for 32.509)
+2019-01-26 20:27:47.426  INFO DESKTOP-FPK7N5K --- [nio-9066-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-01-26 20:27:47.427  INFO DESKTOP-FPK7N5K --- [nio-9066-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization started
+2019-01-26 20:27:47.487  INFO DESKTOP-FPK7N5K --- [nio-9066-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 60 ms
+2019-01-26 20:28:11.234  INFO DESKTOP-FPK7N5K --- [nio-9066-exec-5] c.e.c.RestUploadController               : request received is ->{"firstName":"Harshal","middleName":"fjshfjs","lastName":"Pandit","dob":"04-01-2019","gender":"Male","caste":"sdgsggdg","state":"Maharashtra","district":"sgdg","city":"Vasai","pinCode":401208,"emailId":"harshalpandit95@gmail.com","phoneNo":9999999999,"address":"Nalanda 8/A Wing 24 No Flat\nMittal Enclave Naigaon East"}
+2019-01-26 20:28:12.293  INFO DESKTOP-FPK7N5K --- [nio-9066-exec-5] c.e.c.RestUploadController               : data saved into Database successfully...

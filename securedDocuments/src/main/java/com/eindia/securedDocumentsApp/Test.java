@@ -1,5 +1,7 @@
 package com.eindia.securedDocumentsApp;
 
+import java.util.Random;
+
 public class Test {
 
 	public int calc(String a[]) {
@@ -35,13 +37,13 @@ public class Test {
 
 	}
 
-	public static void main(String args[]) {
-		String[] a = new String[4];
-		a[0] = "x";
-		a[1] = "y";
-		a[2] = "z";
-		a[3] = "y";
-		System.out.println(new Test().calc(a));
+	public static void main(String args[]) {/*
+											 * String[] a = new String[4]; a[0] = "x"; a[1] = "y"; a[2] = "z"; a[3] =
+											 * "y"; System.out.println(new Test().calc(a));
+											 * 
+											 */
+		int random = (int)(Math.random() * 50000000 + 1);
+		System.out.println("EIN" + random);
 
 	}
 

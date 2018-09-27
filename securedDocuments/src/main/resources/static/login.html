@@ -1,3 +1,12 @@
+<head>
+
+<style>
+tbox {
+	width: 92%;
+}
+</style>
+</head>
+
 <script type="text/javascript">
 	$(window).load(function() {
 		$('#slider').nivoSlider();
@@ -18,6 +27,7 @@
 <script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
 <script type="text/javascript" src="js/jquery.sliderTabs.min.js"></script>
 <link href="css/font-awesome.min.css" rel="stylesheet">
+
 <div>
 	<div class="header" id="home">
 		<div class="header_top">
@@ -69,8 +79,8 @@
 														id="u2" name="u2" ng-model="fUsername">
 												</fieldset>
 												<fieldset>
-													<label for="email">Email id</label> <input type="email"
-														id="email" name="email" ng-model="fEmail">
+													<label for="email">Email id</label> <input width="48"
+														type="email" id="email" name="email" ng-model="fEmail">
 												</fieldset>
 												<input type="submit" ng-click="forgotPassword()" name="a1"
 													id="login1" value="submit">
@@ -116,8 +126,8 @@
 					</div>
 					<script src="js/jquery.wmuSlider.js"></script>
 					<script>
-							$('.example1').wmuSlider();
-						</script>
+						$('.example1').wmuSlider();
+					</script>
 
 				</div>
 			</div>
@@ -219,27 +229,27 @@
 
 
 			<script>
-					$(document).ready(function() {
-						var tabs = $("div#mySliderTabs").sliderTabs({
-							autoplay : 5000,
-							indicators : true,
-							panelArrows : true,
-							panelArrowsShowOnHover : true
-						});
-					/*      $("#mySliderTabsContainer").resizable({
-					        maxHeight: 200,
-					        minHeight: 200,
-					        maxWidth: 605
-					      });
-					*/
-					// prettyPrint();
+				$(document).ready(function() {
+					var tabs = $("div#mySliderTabs").sliderTabs({
+						autoplay : 5000,
+						indicators : true,
+						panelArrows : true,
+						panelArrowsShowOnHover : true
 					});
-				
-					$(document).delegate(".nav-list li a", "click", function() {
-						$(this).parent().siblings().removeClass("active");
-						$(this).parent().addClass("active");
-					});
-				</script>
+				/*      $("#mySliderTabsContainer").resizable({
+				        maxHeight: 200,
+				        minHeight: 200,
+				        maxWidth: 605
+				      });
+				*/
+				// prettyPrint();
+				});
+			
+				$(document).delegate(".nav-list li a", "click", function() {
+					$(this).parent().siblings().removeClass("active");
+					$(this).parent().addClass("active");
+				});
+			</script>
 			<!------End Slider ------------>
 		</div>
 	</div>

@@ -1,0 +1,95 @@
+<head>
+<style>
+p {
+	font-size: 16px;
+}
+</style>
+<!-- <link
+	href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700'
+	rel='stylesheet' type='text/css'> -->
+<!-- <link href="css/font-awesome.min.css" rel="stylesheet"> -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/templatemo-style.css" rel="stylesheet">
+</head>
+<div>
+	<!-- Left column -->
+	<div class="templatemo-flex-row">
+		<div class="templatemo-sidebar">
+			<header class="templatemo-site-header">
+				<div class="square"></div>
+				<h1>E-INDIA</h1>
+			</header>
+			<div class="profile-photo-container">
+
+				<img src="http://localhost:9066/api/get/image/{{username}}/pic"
+					alt="Profile Photo" class="img-responsive" />
+				<div class="profile-photo-overlay"></div>
+			</div>
+
+			<div class="mobile-menu-icon">
+				<i class="fa fa-bars"></i>
+			</div>
+			<nav class="templatemo-left-nav">
+				<ul>
+					<li><a href="/#!/staffdashboard" class="active"><i
+							class="fa fa-home fa-fw"></i>Profile</a></li>
+					<li><a href="/#!/createuser"><i class="fa fa-users fa-fw"></i>Create User</a></li>
+					<li><a href="/#!/uploaduserdocs"><i
+							class="fa fa-sliders fa-fw"></i>Upload Documents</a></li>
+					<li><a href="/#!/staff-settings"><i
+							class="fa fa-sliders fa-fw"></i>Settings</a></li>
+					<li><a href="#" ng-click="logout()"><i
+							class="fa fa-eject fa-fw"></i>Sign Out</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<!-- Main content -->
+		<div class="templatemo-content col-1 light-gray-bg">
+			<div class="templatemo-top-nav-container">
+				<div class="row">
+					<nav class="templatemo-top-nav col-lg-12 col-md-12">
+						<ul class="text-uppercase">
+							<li><a href="" class="active">Dashboard</a></li>
+
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+			<div class="templatemo-content-widget white-bg">
+				<h1 class="margin-bottom-10">Welcome {{username}}</h1>
+				<br>
+				<h2>USER PROFILE DISPLAYED HERE</h2>
+				<br>
+				<p ng-repeat="x in userDetails">
+					Name :- {{x.firstName }} {{x.middleName }} {{x.lastName}} <br>
+					Dob :- {{x.dob}} <br> Email :-{{x.email}} <br> Phone No
+					:-{{x.phone}} <br> Gender :- {{x.gender}} <br> Caste :-
+					{{x.caste}} <br> Address :- {{x.address}} ,{{x.district}}
+					,{{x.state}} ,{{x.pin}} <br> Licence No:-{{x.licenceNo}} <br>
+					Adhar No :-{{x.adharNo}} <br> Pan No :- {{x.panNo}} <br>
+					Voter Id No :-{{x.voterNo}}
+
+				</p>
+			</div>
+
+		</div>
+	</div>
+	<footer class="text-right">
+		<p>
+			Copyright &copy; E-INDIA | Designed by <a href="" " target="_parent">E-INDIA</a>
+		</p>
+	</footer>
+</div>
+
+<!-- JS -->
+<!-- <script src="js/jquery-1.11.2.min.js"></script> -->
+<!-- jQuery -->
+<!-- <script src="js/jquery-migrate-1.2.1.min.js"></script> -->
+<!--  jQuery Migrate Plugin -->
+<!-- <script src="https://www.google.com/jsapi"></script> -->
+
+<!-- Templatemo Script -->
+
+<script type="text/javascript" src="./js/templatemo-script.js"></script>

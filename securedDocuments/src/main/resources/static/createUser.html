@@ -1,0 +1,193 @@
+
+<head>
+<style>
+p {
+	font-size: 16px;
+}
+</style>
+<!-- <link
+	href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700'
+	rel='stylesheet' type='text/css'> -->
+<!-- <link href="css/font-awesome.min.css" rel="stylesheet"> -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/templatemo-style.css" rel="stylesheet">
+</head>
+<div>
+	<!-- Left column -->
+	<div class="templatemo-flex-row">
+		<div class="templatemo-sidebar">
+			<header class="templatemo-site-header">
+				<div class="square"></div>
+				<h1>E-INDIA</h1>
+			</header>
+			<div class="profile-photo-container">
+
+				<img src="http://localhost:9066/api/get/image/{{username}}/pic"
+					alt="Profile Photo" class="img-responsive" />
+				<div class="profile-photo-overlay"></div>
+			</div>
+
+			<div class="mobile-menu-icon">
+				<i class="fa fa-bars"></i>
+			</div>
+			<nav class="templatemo-left-nav">
+				<ul>
+					<li><a href="/#!/staffdashboard"><i
+							class="fa fa-home fa-fw"></i>Profile</a></li>
+					<li><a href="/#!/createuser"><i class="fa fa-users fa-fw"></i>Create
+							User</a></li>
+					<li><a href="/#!/uploaduserdocs"><i
+							class="fa fa-sliders fa-fw"></i>Upload Documents</a></li>
+					<li><a href="/#!/staff-settings"><i class="fa fa-sliders fa-fw"></i>Settings</a></li>
+					<li><a href="#" ng-click="logout()"><i
+							class="fa fa-eject fa-fw"></i>Sign Out</a></li>
+				</ul>
+			</nav>
+		</div>
+		<!-- Main content -->
+		<div class="templatemo-content col-1 light-gray-bg">
+			<div class="templatemo-content-container">
+				<div class="templatemo-content-widget white-bg">
+					<h2 class="margin-bottom-10">USER INFORMATION</h2>
+
+
+					<!-- <form action="AddToDb" onsubmit="return validate()"
+						class="templatemo-login-form" name="myForm" method="post"> -->
+					<form class="templatemo-login-form" ng-submit="store()">
+						<div class="row form-group">
+							<div class="col-lg-4 col-md-4 form-group">
+								<label>Firstname</label> <input type="text" class="form-control"
+									maxlength="20" id="fn" name="fn" ng-model="firstname"
+									placeholder="Enter the Firstname" required>
+							</div>
+							<div class="col-lg-4 col-md-4 form-group">
+								<label>Middlename</label> <input type="text"
+									ng-model="middlename" class="form-control" maxlength="20"
+									id="mn" name="mn" placeholder="Enter the Middlename" required>
+							</div>
+							<div class="col-lg-4 col-md-4 form-group">
+								<label>Lastname</label> <input type="text" class="form-control"
+									maxlength="20" id="ln" name="ln" ng-model="lastname"
+									placeholder="Enter the Lastname" required>
+							</div>
+						</div>
+						<div class="row form-group">
+
+							<div class="col-lg-4 col-md-4 form-group">
+								<label class="control-label templatemo-block">Date of
+									birth</label>
+						
+								<input type="date" ng-model="dob" class="form-control"><!-- {{dob
+								| date:'MM/dd/yyyy'}} -->
+							</div>
+						
+							<div class="form-element multi-field birthday"
+								id="birthday-form-element"></div>
+							<div class="col-lg-2 col-md-3 form-group">
+								<label id="f" class="gender">Gender</label> <select id="gender"
+									name="gender" class="form-control" ng-model="gender" required>
+									<option value="">Gender</option>
+									<option value="Male">Male</option>
+									<option value="Female">Female</option>
+									<option value="Others">Others</option>
+								</select> <!-- {{gender}} -->
+							</div>
+							<div class="col-lg-2 col-md-3 form-group">
+								<label>Caste</label> <input type="text" class="form-control"
+									maxlength="15" id="caste" name="caste"
+									placeholder="Enter caste" required
+									oninvalid="setCustomValidity('Plz enter ')"
+									onchange="try{setCustomValidity('')}catch(e){}"
+									ng-model="caste"><!-- {{caste}} -->
+							</div>
+						</div>
+						<div class="row form-group">
+							<div class="col-lg-5 col-md-4 form-group">
+								<label>Address</label>
+								<textarea rows="5" cols="50" class="form-control"
+									maxlength="150" id="address" name="address"
+									placeholder="Enter the Address" ng-model="address" required></textarea>
+								<!-- {{address}} -->
+							</div>
+
+							<div class="col-lg-3 col-md-3 form-group">
+								<label>State</label> <input type="text" class="form-control"
+									maxlength="15" id="state" name="state"
+									placeholder="Enter State" ng-model="state" required>
+							<!-- 	{{state}} -->
+							</div>
+							<div class="col-lg-3 col-md-3 form-group">
+								<label>District</label> <input type="text" class="form-control"
+									maxlength="15" id="district" name="district"
+									placeholder="Enter District" ng-model="district" required>
+								<!-- {{district}} -->
+							</div>
+							<div class="col-lg-3 col-md-3 form-group">
+								<label>City</label> <input type="text" class="form-control"
+									maxlength="15" id="city" name="city" placeholder="Enter City"
+									ng-model="city" required><!-- {{city}} -->
+							</div>
+							<div class="col-lg-3 col-md-3 form-group">
+								<label>Pincode</label> <input type="number" class="form-control"
+									ng-model="pin" min="100000" max="900000" id="pin" name="pin"
+									placeholder="Enter Pincode" required
+									oninvalid="setCustomValidity('Enter valid pincode ')"
+									onchange="try{setCustomValidity('')}catch(e){}">
+								<!-- {{pin}} -->
+							</div>
+
+						</div>
+
+
+						<div class="row form-group">
+							<div class="col-lg-5 col-md-4 form-group">
+								<label>Email id</label> <input type="email" class="form-control"
+									maxlength="30" id="email" name="email"
+									placeholder="Enter email id " ng-model="email" required><!-- {{email}} -->
+							</div>
+							<div class="col-lg-3 col-md-3 form-group">
+								<label>Phone no</label> <input type="number" ng-model="phone"
+									class="form-control" min="7000000000" max="9999999999"
+									id="phone" name="phone" placeholder="Enter phone no" required
+									oninvalid="setCustomValidity('Enter valid Phone no ')"
+									onchange="try{setCustomValidity('')}catch(e){}"><!-- {{phone}} -->
+							</div>
+
+						</div>
+
+
+						<div class="form-group text-left">
+							<!-- <button type="submit" class="templatemo-blue-button"
+								ng-click="store()">
+								<i class="fa fa-home fa-fw"></i>SUBMIT
+							</button>ng-click="store()" -->
+							<button type="submit" 
+								class="templatemo-blue-button">Submit</button>
+							<!-- <input type="button" class="templatemo-blue-button"
+								ng-click="store()"> <i class="fa fa-home fa-fw" value="Submit">Submit
+								details</i> -->
+							<button type="reset" class="templatemo-white-button">RESET</button>
+						</div>
+						<br>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="text-right">
+		<p>
+			Copyright &copy; E-INDIA | Designed by <a href="" " target="_parent">E-INDIA</a>
+		</p>
+	</footer>
+</div>
+
+<!-- JS -->
+<!-- <script src="js/jquery-1.11.2.min.js"></script> -->
+<!-- jQuery -->
+<!-- <script src="js/jquery-migrate-1.2.1.min.js"></script> -->
+<!--  jQuery Migrate Plugin -->
+<!-- <script src="https://www.google.com/jsapi"></script> -->
+
+<!-- Templatemo Script -->
+
+<script type="text/javascript" src="./js/templatemo-script.js"></script>

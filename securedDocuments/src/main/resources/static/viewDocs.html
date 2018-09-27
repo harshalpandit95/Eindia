@@ -1,0 +1,186 @@
+<head>
+<style>
+p {
+	font-size: 16px;
+}
+</style>
+<!-- <link
+	href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700'
+	rel='stylesheet' type='text/css'> -->
+<!-- <link href="css/font-awesome.min.css" rel="stylesheet"> -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/templatemo-style.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+<script type="text/javascript" src="js/jquery.sliderTabs.min.js"></script>
+
+</head>
+<div>
+	<!-- Left column -->
+	<div class="templatemo-flex-row">
+		<div class="templatemo-sidebar">
+			<header class="templatemo-site-header">
+				<div class="square"></div>
+				<h1>E-INDIA</h1>
+			</header>
+			<div class="profile-photo-container">
+
+				<img src="http://localhost:9066/api/get/image/{{username}}/pic"
+					alt="Profile Photo" class="img-responsive" />
+				<div class="profile-photo-overlay"></div>
+			</div>
+
+			<div class="mobile-menu-icon">
+				<i class="fa fa-bars"></i>
+			</div>
+			<nav class="templatemo-left-nav">
+				<ul>
+					<li><a href="/#!/tpdashboard"><i class="fa fa-home fa-fw"></i>Profile</a></li>
+					<li><a href="/#!/viewDocs" class="active"><i
+							class="fa fa-users fa-fw"></i>View Documents</a></li>
+					<li><a href="/#!/changetpsetting"><i
+							class="fa fa-sliders fa-fw"></i>Settings</a></li>
+					<li><a href="#" ng-click="logout()"><i
+							class="fa fa-eject fa-fw"></i>Sign Out</a></li>
+				</ul>
+			</nav>
+		</div>
+		<!-- Main content -->
+		<div class="templatemo-content col-1 light-gray-bg">
+			<div class="templatemo-top-nav-container">
+				<div class="row">
+					<nav class="templatemo-top-nav col-lg-12 col-md-12">
+						<ul class="text-uppercase">
+							<li><a href="/#!/dashboard" class="active">dashboard</a></li>
+
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="templatemo-content col-1 light-gray-bg">
+
+				<div class="templatemo-content-container">
+					<div class="templatemo-content-widget white-bg">
+						<form class="templatemo-login-form" enctype="multipart/form-data">
+							<div class="row form-group">
+								<div class="col-lg-12">
+									<h2 class="margin-bottom-10">Upload Qr-Code Picture</h2>
+									<p>Image size upto 1MB</p>
+									<label class="control-label templatemo-block">File
+										Input</label>
+									<!-- <input type="file" name="fileToUpload" id="fileToUpload" class="margin-bottom-10"> -->
+									<input type="file" file-model="uploadedFile" name="photo"
+										id="photo" class="filestyle" data-buttonName="btn-primary"
+										data-buttonBefore="true" data-icon="false">
+
+								</div>
+							</div>
+
+
+
+							<hr />
+							<div class="col-sm-offset-2">
+								<!-- for debug only  <p>{{uploadResult}}</p>
+								<div ng-repeat=" x in uploadResult track by $index">
+									<p>{{x}}</p>
+
+									{{x.value}}
+								</div> -->
+							</div>
+
+							<div class="form-group text-left">
+								<button type="submit" ng-click="scanQrCode()"
+									class="templatemo-blue-button">Scan Qr-Code</button>
+								<button type="reset" class="templatemo-white-button">Reset</button>
+							</div>
+						</form>
+						<BR>
+						<div ng-show="{{show}}">
+							<h2 class="margin-bottom-10">LIST OF DOCUMENTS</h2>
+							<div class="panel panel-default table-responsive">
+
+
+
+								<table
+									class="table table-striped table-bordered templatemo-user-table">
+									<thead>
+										<tr>
+											<td>#</td>
+											<td>Document Name</td>
+											<td>E-Signed</td>
+											<td>View</td>
+											<!-- <td>Select</td> -->
+										</tr>
+									</thead>
+									<tbody>
+
+										<tr ng-repeat="x in uploadResult.body.dataList ">
+											<td>{{$index+1}}</td>
+											<td>{{x.value |uppercase}}</td>
+											<td>Yes</td>
+											<td><a class="templatemo-edit-btn" data-toggle="modal"
+												data-target="#ViewPan" ng-click="openPan(x.value)">View</a></td>
+											<!-- <td><input type="checkbox" name="documents" id="adhar"
+												value="adhar" ng-model="adhar" /> <label for="adhar"><span></span></label></td> -->
+										</tr>
+
+
+
+									</tbody>
+								</table>
+
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+
+	<div class="modal fade" id="ViewPan" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<label><h2>{{userId}}</h2></label>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+					<label>Displaying {{showDoc | uppercase}}</label>
+					<center>
+						<img
+							src="http://localhost:9066/api/get/image/{{userId}}/{{showDoc}}"
+							alt="{{showDoc}} not found or not signed" class="img-responsive" />
+					</center>
+					</br>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<footer class="text-right">
+		<p>
+			Copyright &copy; E-INDIA | Designed by <a href="" " target="_parent">E-INDIA</a>
+		</p>
+	</footer>
+</div>
+
+
+
+<!-- JS -->
+<!-- <script src="js/jquery-1.11.2.min.js"></script> -->
+<!-- jQuery -->
+<!-- <script src="js/jquery-migrate-1.2.1.min.js"></script> -->
+<!--  jQuery Migrate Plugin -->
+<!-- <script src="https://www.google.com/jsapi"></script> -->
+
+<!-- Templatemo Script -->
+
+
+<script type="text/javascript" src="./js/templatemo-script.js"></script>
