@@ -42,8 +42,29 @@ app.controller('loginCtrl', function($scope, $http, $window, $location, $rootSco
 
 	$scope.forgotPassword = function() {
 		console.log($scope.fUsername);
-		console.log($scope.fEmail)
-		alert('clicked forgot password button');
+		console.log($scope.fEmail);
+		$http({
+			method : 'POST',
+			url : 'http://localhost:9066/dbService/recoverPassword',
+			data : {
+				'username' : $scope.fUsername,
+				'email' : $scope.fEmail
+			}
+		}).then(function onSuccess(response) {
+			console.log(response.data.body.status);
+			$scope.status = response.data.body.status;
+			if ($scope.status != "success") {
+				alert(response.data.body.status);
+			} else {
+				alert('password has been sent to registered mail.. ')
+			}
+
+		//alert(response.data.body.status);
+		}).catch(function onError(response) {
+			//console.log(response.data.body.status);
+
+		});
+		
 	}
 
 	$scope.login = function() {
@@ -53,7 +74,7 @@ app.controller('loginCtrl', function($scope, $http, $window, $location, $rootSco
 
 		$http({
 			method : 'POST',
-			url : 'http://localhost:8080/dbService/getUserDetails',
+			url : 'http://localhost:9066/dbService/getUserDetails',
 			data : {
 				'username' : $scope.username,
 				'password' : $scope.password,

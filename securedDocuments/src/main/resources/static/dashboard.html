@@ -12,12 +12,19 @@
 
 
 </head> -->
+<head>
+<style>
+p {
+	font-size: 16px;
+}
+</style>
 <link
 	href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700'
 	rel='stylesheet' type='text/css'>
 <link href="css/font-awesome.min.css" rel="stylesheet">
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/templatemo-style.css" rel="stylesheet">
+</head>
 <div>
 	<!-- Left column -->
 	<div class="templatemo-flex-row">
@@ -42,7 +49,8 @@
 							class="fa fa-users fa-fw"></i>Documents</a></li>
 					<li><a href="preferences.html"><i
 							class="fa fa-sliders fa-fw"></i>Settings</a></li>
-					<li><a href="#" ng-click="logout()"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
+					<li><a href="#" ng-click="logout()"><i
+							class="fa fa-eject fa-fw"></i>Sign Out</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -52,18 +60,25 @@
 				<div class="row">
 					<nav class="templatemo-top-nav col-lg-12 col-md-12">
 						<ul class="text-uppercase">
-							<li><a href="" class="active">Admin panel</a></li>
-							<li><a href="">Dashboard</a></li>
-							<li><a href="">Overview</a></li>
-							<li><a href="#">Sign in form</a></li>
+							<li><a href="" class="active">Dashboard</a></li>
+
 						</ul>
 					</nav>
 				</div>
 			</div>
 			<div class="templatemo-content-widget white-bg">
-				<h2 class="margin-bottom-10">Welcome {{username}}</h2>
-				<p>USER PROFILE DISPLAYED HERE</p>
-				{{userDetails}}
+				<h1 class="margin-bottom-10">Welcome {{username}}</h1><br>
+				<h2>USER PROFILE DISPLAYED HERE</h2><br>
+				<p ng-repeat="x in userDetails">
+					Name :- {{x.firstName }} {{x.middleName }} {{x.lastName}} <br>
+					Dob :- {{x.dob}} <br> Email :-{{x.email}} <br> Phone No
+					:-{{x.phone}} <br> Gender :- {{x.gender}} <br> Caste :-
+					{{x.caste}} <br> Address :- {{x.address}} ,{{x.district}}
+					,{{x.state}} ,{{x.pin}} <br> Licence No:-{{x.licenceNo}} <br>
+					Adhar No :-{{x.adharNo}} <br> Pan No :- {{x.panNo}} <br>
+					Voter Id No :-{{x.voterNo}}
+
+				</p>
 			</div>
 		</div>
 	</div>
@@ -140,7 +155,8 @@
 			});
 		}
 	});
-</script> --> -->
+</script> -->
+-->
 <script type="text/javascript" src="js/templatemo-script.js"></script>
 <!-- Templatemo Script -->
 
