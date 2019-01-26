@@ -304,9 +304,15 @@ app.controller('loginCtrl', function($scope, $http, $window, $location, $rootSco
 				alert('password has been sent to registered mail.. ')
 			}
 
+<<<<<<< HEAD
 		// alert(response.data.body.status);
 		}).catch(function onError(response) {
 			// console.log(response.data.body.status);
+=======
+		//alert(response.data.body.status);
+		}).catch(function onError(response) {
+			//console.log(response.data.body.status);
+>>>>>>> 7058d594bf76d0545a962eb0e865ee3ea83fc404
 
 		});
 		

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2019-01-26 19:55:49.070 ERROR DESKTOP-FPK7N5K --- [nio-9066-exec-8] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException
 	at com.eindia.service.StorageService.getResources(StorageService.java:94)
@@ -495,3 +496,5 @@ Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: Person is not ma
 2019-01-26 20:27:47.487  INFO DESKTOP-FPK7N5K --- [nio-9066-exec-1] o.s.w.s.DispatcherServlet                : FrameworkServlet 'dispatcherServlet': initialization completed in 60 ms
 2019-01-26 20:28:11.234  INFO DESKTOP-FPK7N5K --- [nio-9066-exec-5] c.e.c.RestUploadController               : request received is ->{"firstName":"Harshal","middleName":"fjshfjs","lastName":"Pandit","dob":"04-01-2019","gender":"Male","caste":"sdgsggdg","state":"Maharashtra","district":"sgdg","city":"Vasai","pinCode":401208,"emailId":"harshalpandit95@gmail.com","phoneNo":9999999999,"address":"Nalanda 8/A Wing 24 No Flat\nMittal Enclave Naigaon East"}
 2019-01-26 20:28:12.293  INFO DESKTOP-FPK7N5K --- [nio-9066-exec-5] c.e.c.RestUploadController               : data saved into Database successfully...
+=======
+>>>>>>> 7058d594bf76d0545a962eb0e865ee3ea83fc404

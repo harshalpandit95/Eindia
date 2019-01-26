@@ -18,6 +18,10 @@ import org.springframework.web.bind.annotation.RestController;
 import com.eindia.domain.Info;
 import com.eindia.model.Body;
 import com.eindia.model.ForgotPasswordRequest;
+<<<<<<< HEAD
+=======
+import com.eindia.model.ForgotPasswordResponse;
+>>>>>>> 7058d594bf76d0545a962eb0e865ee3ea83fc404
 import com.eindia.model.LoginRequest;
 import com.eindia.model.RegisterUserRequest;
 import com.eindia.model.RegisterUserResponse;
@@ -35,6 +39,7 @@ public class DatabaseController {
 	private InfoRepo irepo;
 	@Autowired
 	private EmailService eservice;
+<<<<<<< HEAD
 
 	protected String getSaltString() {
 		String SALTCHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
@@ -91,6 +96,8 @@ public class DatabaseController {
 
 		return data;
 	}
+=======
+>>>>>>> 7058d594bf76d0545a962eb0e865ee3ea83fc404
 
 	@RequestMapping(value = "/getUserDetails", method = RequestMethod.POST, produces = "application/json")
 	public @ResponseBody String getUserInfo(@RequestBody String request) throws IOException {
@@ -123,6 +130,7 @@ public class DatabaseController {
 
 		ResponseData responseObj = new ResponseData();
 		Body body = new Body();
+<<<<<<< HEAD
 		if (!StringUtils.isEmpty(requestObj.getEmail()) && !StringUtils.isEmpty(requestObj.getUsername())) {
 
 			if (eservice.sendEmail("eindia111@gmail.com", "eindia111@gmail.com", "8087024498", requestObj)) {
@@ -168,6 +176,16 @@ public class DatabaseController {
 
 		responseObj.setBody(body);
 
+=======
+
+		if (eservice.sendEmail("eindia111@gmail.com",  "eindia111@gmail.com", "8087024498", requestObj)) {
+			body.setStatus("success");
+			responseObj.setBody(body);
+		} else {
+			body.setStatus("Password for User Not Found");
+			responseObj.setBody(body);
+		}
+>>>>>>> 7058d594bf76d0545a962eb0e865ee3ea83fc404
 		data = JsonParserUtil.toJson(responseObj);
 		return data;
 	}
