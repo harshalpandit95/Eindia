@@ -14,10 +14,6 @@ import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-//@Configuration
-//@EnableTransactionManagement
-//@EnableJpaRepositories(entityManagerFactoryRef = "anpEntityManagerFactory", transactionManagerRef = "anpTransactionManager", basePackages = {
-//		"com.vodafone.anp.repo" })
 
 @Configuration
 @EnableTransactionManagement
